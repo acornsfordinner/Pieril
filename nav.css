@@ -1,20 +1,17 @@
-.fa-1x {
+header {
+  background-color: #39375b;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: #745c97;
+}
+
+header.fa-1x {
   font-size: 1.5rem !important;
-}
-.navbar-toggler.toggler-example {
-  cursor: pointer;
-}
-.dark-blue-text {
-  color: darkblue;
-}
-.dark-pink-text {
-  color: #ac003a;
-}
-.dark-amber-text {
-  color: #ff6f00;
-}
-.dark-teal-text {
-  color: #004d40;
 }
 
 .navbar-light .navbar-toggler {
@@ -29,12 +26,19 @@
   content: none;
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #745c97;
+}
+
 .hamburger .nav-link.active,
 .hamburger .show > .nav-link {
-  color: #007bff;
+  color: white;
   background-color: transparent;
 }
 
 .hamburger .nav-link {
   padding: 0;
 }
+
