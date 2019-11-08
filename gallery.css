@@ -128,6 +128,7 @@ figcaption:hover {
   padding: 5px;
   color: #ffffff;
   text-shadow: 0.5vmin 0.4vmin 0 green, -0.5vmin -0.4vmin 0 #d53a33;
+  white-space: nowrap;
 }
 
 .gallery-text p {
@@ -377,7 +378,10 @@ figcaption:hover {
   }
 
   .gallery-img-11 {
-    grid-column-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 12;
+    grid-row-end: 13;
   }
 
   .gallery-video-1 {
@@ -584,7 +588,7 @@ figcaption:hover {
 
 @media all and (min-width: 1200px) {
   .gallery-slogan-1 p {
-    font-sizdfsde: 350%;
+    font-size: 350%;
   }
 
   .piesonice {
