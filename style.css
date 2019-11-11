@@ -24,6 +24,7 @@ header.fa-1x {
 
 .navbar-brand img {
 	width: 15vw;
+	margin:0;
 }
 
 .dropdown-menu {
