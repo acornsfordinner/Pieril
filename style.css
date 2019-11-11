@@ -750,3 +750,7 @@ article h3{
 	font-family: "Shadows Into Light", cursive;
 }
 /*Slutet av css till career.html*/
+
+main{
+	min-height:100%;
+}
