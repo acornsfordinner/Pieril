@@ -707,6 +707,12 @@ p {
 	font-family: "Shadows Into Light", cursive;
 	font-size: 4vw;
 }
+
+h3{
+	font-family: "Shadows Into Light", cursive;
+	font-size: 230%!important;
+}
+
 @media screen and (max-width: 576px) {
 	.abcd {
 		font-size: 8vw;
@@ -737,3 +743,9 @@ p {
 
 
 /*Slutet av css till startsida*/
+
+/*Början av css till career.html*/
+article h3{
+	font-family: "Shadows Into Light", cursive;
+}
+/*Slutet av css till career.html*/
