@@ -1,28 +1,708 @@
-body{
-    background: aliceblue;
+p {
+  font-family: "Ubuntu", sans-serif;
 }
-.slide{
-    width: 45rem;
-    height: 30rem;
+
+header {
+  background-color: #39375b;
 }
-.motto{
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: #745c97;
+}
+
+header.fa-1x {
+  font-size: 1.5rem !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-brand img {
+  width: 15vw;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #745c97;
+}
+
+.hamburger .nav-link.active,
+.hamburger .show > .nav-link {
+  color: white;
+  background-color: transparent;
+}
+
+.hamburger .nav-link {
+  padding: 0;
+}
+
+.embed-responsive {
+  height: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(18, 30vw);
+  grid-gap: 15px;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.gallery h3 {
+  text-align: center;
+  column-span: all;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-img-11 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 12;
+  grid-row-end: 14;
+}
+
+.gallery-video-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.gallery-video-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 14;
+  grid-row-end: 16;
+}
+
+.gallery-slogan-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: inline;
+}
+
+.gallery-slogan-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
+
+.gridingrid {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-auto-flow: column;
+  display: grid;
+  grid: subgrid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.gallery-text {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 12;
+  column-count: 1;
+}
+
+.gallery-slogan-1 p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "League Script", cursive;
+  font-size: 300%;
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+figcaption {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition-delay: 100ms;
+  transition: all 300ms;
+  opacity: 0;
+}
+
+figcaption p {
+  color: white;
+  text-align: center;
+}
+
+figure:hover img {
+  transform: scale(1.4);
+  transition: all 300ms ease-in-out;
+}
+
+figcaption:hover {
+  opacity: 1;
+}
+
+.piesonice {
+  transform: rotate(-5deg);
+  font-family: "Sigmar One", cursive;
+  grid-area: text;
+  font-size: 12vmin;
+  margin: 0;
+  padding: 5px;
+  color: #ffffff;
+  text-shadow: 0.5vmin 0.4vmin 0 green, -0.5vmin -0.4vmin 0 #d53a33;
+  white-space: nowrap;
+}
+
+.gallery-text p {
+  font-size: 79%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media all and (min-width: 350px) {
+  .gallery-text p {
+    font-size: 89%;
+  }
+}
+
+@media all and (min-width: 390px) {
+  .gallery-text p {
+    font-size: 100%;
+  }
+}
+
+@media all and (min-width: 460px) {
+  .gallery-img-11 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 10;
+    grid-row-end: 12;
+  }
+
+  .gallery-video-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+
+  .gallery-video-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 12;
+    grid-row-end: 14;
+  }
+
+  .gallery-slogan-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: inline;
+  }
+
+  .gallery-slogan-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 14;
+    grid-row-end: 15;
+  }
+
+  .gridingrid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-auto-flow: column;
+    display: grid;
+    grid: subgrid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  .gallery-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    column-count: 1;
+  }
+
+  .gallery-slogan-1 p {
+    font-size: 500%;
+  }
+
+  .piesonice {
+    font-size: 13vmin;
+  }
+}
+
+@media all and (min-width: 576px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(18, 13vw);
+    grid-gap: 15px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+
+  .gallery h3 {
+    text-align: center;
+    column-span: all;
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery-img-11 {
+    grid-column-end: 4;
+    grid-row-start: 16;
+    grid-row-end: 17;
+  }
+
+  .gallery-video-1 {
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+  }
+
+  .gallery-video-2 {
+    grid-column-end: 4;
+    grid-row-start: 12;
+    grid-row-end: 15;
+  }
+
+  .gallery-slogan-1 {
+    grid-row-start: 15;
+    grid-row-end: 16;
+  }
+
+  .gallery-slogan-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 17;
+    grid-row-end: 18;
+  }
+
+  .gallery-text {
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 12;
+  }
+
+  .gridingrid {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .gallery-slogan-1 p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "League Script", cursive;
+    font-size: 300%;
+  }
+
+  figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  figcaption {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition-delay: 100ms;
+    transition: all 300ms;
+    opacity: 0;
+  }
+
+  figcaption p {
     color: white;
-    height: 20rem;
-    background:rgb(36, 38, 49);
+    text-align: center;
+  }
+
+  figure:hover img {
+    transform: scale(1.4);
+    transition: all 300ms ease-in-out;
+  }
+
+  figcaption:hover {
+    opacity: 1;
+  }
+
+  .piesonice {
+    font-size: 6vmin;
+  }
+
+  .gallery-text p {
+    font-size: 93%;
+  }
 }
-.rubrik{
-    height: 30rem;
+
+@media all and (min-width: 592px) {
+  .gallery-text p {
+    font-size: 96%;
+  }
+}
+
+@media all and (min-width: 674px) {
+  .gallery-text p {
+    font-size: 100%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 14vw);
+  }
+
+  .gallery h3 {
+    text-align: center;
+    column-span: all;
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery-img-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .gallery-img-9 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .gallery-img-10 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 11;
+  }
+
+  .gallery-img-11 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 12;
+    grid-row-end: 13;
+  }
+
+  .gallery-video-1 {
+    grid-row-end: 6;
+  }
+
+  .gallery-video-2 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 11;
+  }
+
+  .gallery-slogan-1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .gallery-slogan-2 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 12;
+  }
+
+  .gallery-text {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    column-count: 2;
+  }
+
+  .gridingrid {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .gallery-slogan-1 p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "League Script", cursive;
+    font-size: 300%;
+  }
+
+  figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  figcaption {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition-delay: 100ms;
+    transition: all 300ms;
+    opacity: 0;
+  }
+
+  figcaption p {
     color: white;
-    background:rgb(36, 38, 49);
-    
+    text-align: center;
+  }
+
+  figure:hover img {
+    transform: scale(1.4);
+    transition: all 300ms ease-in-out;
+  }
+
+  figcaption:hover {
+    opacity: 1;
+  }
+
+  .piesonice {
+    transform: rotate(-5deg);
+    font-family: "Sigmar One", cursive;
+    grid-area: text;
+    font-size: 5vmin;
+    margin: 0;
+    padding: 5px;
+    color: #ffffff;
+    text-shadow: 0.5vmin 0.4vmin 0 green, -0.5vmin -0.4vmin 0 #d53a33;
+  }
 }
-.title{
-    font-family: 'Satisfy', cursive;
+
+@media all and (min-width: 967px) {
+  .gallery-text p {
+    font-size: 96%;
+  }
 }
-.logo{
-    background-image: url('logo.png');
-    background-repeat: no-repeat;
-    background-size: 10rem;
-    height: 10rem;
-    /* border:solid 1px rgb(161, 20, 20); */
+
+@media all and (min-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 10vw);
+  }
+
+  .gallery-img-9 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .gallery-img-10 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 9;
+  }
+
+  .gallery-img-11 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+
+  .gallery-img-12 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 9;
+  }
+
+  .gallery-video-1 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+
+  .gallery-video-2 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 7;
+    grid-row-end: 9;
+  }
+
+  .gallery-slogan-1 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .gallery-slogan-2 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .gallery-text {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    column-count: 3;
+  }
+
+  .gridingrid {
+    grid-column-start: 5;
+    grid-column-end: 8;
+  }
+
+  .piesonice {
+    font-size: 7vmin;
+  }
+
+  .gallery-text p {
+    font-size: 83%;
+  }
+}
+
+@media all and (min-width: 1013px) {
+  .gallery-text p {
+    font-size: 86%;
+  }
+}
+
+@media all and (min-width: 1045px) {
+  .gallery-text p {
+    font-size: 89%;
+  }
+}
+
+@media all and (min-width: 1077px) {
+  .gallery-text p {
+    font-size: 92%;
+  }
+}
+
+@media all and (min-width: 1185px) {
+  .gallery-text p {
+    font-size: 93%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .gallery-slogan-1 p {
+    font-size: 350%;
+  }
+
+  .piesonice {
+    font-size: 8vmin;
+  }
+
+  .gallery-text p {
+    font-size: 100%;
+  }
+}
+
+footer {
+  background-color: #39375b;
+}
+
+.info {
+  font-size: 15px;
+  color: white;
+  padding-left: 7vw;
+}
+
+.info p {
+  padding-top: 1em;
+}
+
+.icons {
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+.icons a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: #745c97;
+  color: white;
+}
+p {
+  font-size: 18px;
+  line-height: 2;
+}
+.container {
+  margin-top: 30px;
+}
+.abcd {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 4vw;
+}
+@media screen and (max-width: 576px) {
+  .abcd {
+    font-size: 8vw;
+  }
+  p {
+    font-size: 3vw;
+    margin-bottom: 10px;
+  }
+  .container {
+    margin-top: auto;
+  }
+  .potrait {
+    height: 24vh;
+  }
 }
