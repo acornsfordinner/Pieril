@@ -62,6 +62,7 @@ header.fa-1x {
 .gallery h3 {
 	text-align: center;
 	column-span: all;
+	font-family: "Shadows Into Light", cursive;
 }
 
 .gallery-img {
