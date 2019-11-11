@@ -707,6 +707,11 @@ p {
 	font-family: "Shadows Into Light", cursive;
 	font-size: 4vw;
 }
+
+.m-3 h3{
+	font-family: "Shadows Into Light", cursive;
+}
+
 @media screen and (max-width: 576px) {
 	.abcd {
 		font-size: 8vw;
