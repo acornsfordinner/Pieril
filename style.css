@@ -710,7 +710,7 @@ p {
 
 /*Början av css till startsida*/
 .d-block{
-	max-height: 75vh;
+	max-height: 65vh;
 	margin: 50px 0;
 	object-fit: cover;
 	object-position: 50% 50%;
