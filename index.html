@@ -12,11 +12,74 @@
 	</head>
 
 	<body>
+		<header class="container-fluid">
+			<nav class="navbar navbar-light light-blue lighten-4">
+				<section class="col-3">
+					<a class="navbar-brand" href="index.html"
+					   ><img class="d-block d-sm-none" src="images/logo.png"
+							 /></a>
+				</section>
+				<section class="col-6 justify-content-center d-none d-sm-block">
+					<ul class="justify-content-center nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">Start</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="order.html">Order</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="gallery.html">Gallery</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+							   class="nav-link dropdown-toggle"
+							   data-toggle="dropdown"
+							   href="about.html"
+							   role="button"
+							   aria-haspopup="true"
+							   aria-expanded="false"
+							   >About Us</a
+								>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="about.html">About Us</a>
+								<a class="dropdown-item" href="career.html">Work With Us</a>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="col-3 text-right hamburger">
+					<ul class="nav nav-pills d-block d-sm-none">
+						<li class="nav-item dropdown">
+							<a
+							   class="nav-link dropdown-toggle"
+							   data-toggle="dropdown"
+							   href="#"
+							   role="button"
+							   aria-haspopup="true"
+							   aria-expanded="false"
+							   ><i class="fas fa-bars fa-1x"></i
+								></a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="index.html">Start</a>
+								<a class="dropdown-item" href="order.html">Order</a>
+								<a class="dropdown-item" href="gallery.html">Gallery</a>
+								<a class="dropdown-item" href="about.html">About Us</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="career.html">Work With Us</a>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</nav>
+		</header>
+
+
+
 		<section class="container">
 			<section class="row mt-3 mb-5">
 				<section class="col">
 					<h1 class="d-flex justify-content-center align-itms-center pt-5 title ">Pieril Pie Makes You High </h1>
-					<h3 class="d-flex justify-content-center mt-5">Have it your way When you take it away</h3>
+					<h3 class="d-flex justify-content-center mt-5">Have it your way When you take away</h3>
 				</section>
 			</section>
 			<section class="row">
@@ -36,6 +99,8 @@
 						<ol class="carousel-indicators">
 							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 						</ol>
 						<section class="carousel-inner">
 							<section class="carousel-item active">
@@ -43,6 +108,12 @@
 							</section>
 							<section class="carousel-item">
 								<img class="d-block w-100" src="images/gallery/pie-crust-lattice.jpg" alt="Second slide">
+							</section>'
+							<section class="carousel-item">
+								<img class="d-block w-100" src="images/gallery/" alt="Third slide">
+							</section>
+							<section class="carousel-item">
+								<img class="d-block w-100" src="images/gallery/" alt="Fourth slide">
 							</section>
 						</section>
 						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -57,5 +128,24 @@
 				</section>
 			</section>
 		</section>
+
+
+
+		<footer class="container-fluid">
+			<section class="row">
+				<section class="info col-7 col-sm-9 col-xl-10">
+					<p>
+						Address: Bergsgatan 12<br />
+						Contact: 040-123456
+					</p>
+				</section>
+
+				<section class="icons col-5 col-sm-3 col-xl-2">
+					<a href="https://www.facebook.com" class="fab fa-facebook"></a>
+					<a href="https://www.instagram.com" class="fab fa-instagram"></a>
+					<a href="https://www.gmail.com" class="fas fa-envelope-square"></a>
+				</section>
+			</section>
+		</footer>
 	</body>
 </html>
