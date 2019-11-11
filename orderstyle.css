@@ -102,7 +102,7 @@ body {
     width: 50vw;
 }
 
-.box1-4 {
+.box1-2 {
   grid-area: box1;
   background-color: #39375b;
   display: grid;
