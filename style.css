@@ -731,7 +731,7 @@ h3{
 }
 
 /*Början av css till startsida*/
-.carousel slide .d-block{
+.carousel-item .d-block{
 	max-height: 65vh;
 	margin: 50px 0;
 	object-fit: cover;
