@@ -710,7 +710,7 @@ p {
 
 h3{
 	font-family: "Shadows Into Light", cursive;
-	font-size: 230%;
+	font-size: 230%!important;
 }
 
 @media screen and (max-width: 576px) {
