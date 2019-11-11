@@ -196,7 +196,7 @@ figcaption:hover {
 }
 
 .gallery-text p {
-	font-size: 79%;
+	font-size: 70%;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
 		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -204,13 +204,13 @@ figcaption:hover {
 
 @media all and (min-width: 350px) {
 	.gallery-text p {
-		font-size: 89%;
+		font-size: 74%;
 	}
 }
 
 @media all and (min-width: 390px) {
 	.gallery-text p {
-		font-size: 100%;
+		font-size: 84%;
 	}
 }
 
@@ -278,6 +278,10 @@ figcaption:hover {
 
 	.piesonice {
 		font-size: 13vmin;
+	}
+	
+	.gallery-text p{
+		font-size: 74%;
 	}
 }
 
@@ -390,19 +394,13 @@ figcaption:hover {
 	}
 
 	.gallery-text p {
-		font-size: 93%;
-	}
-}
-
-@media all and (min-width: 592px) {
-	.gallery-text p {
-		font-size: 96%;
+		font-size: 80%;
 	}
 }
 
 @media all and (min-width: 674px) {
 	.gallery-text p {
-		font-size: 94%;
+		font-size: 88%;
 	}
 }
 
@@ -540,7 +538,7 @@ figcaption:hover {
 		text-shadow: 0.5vmin 0.4vmin 0 green, -0.5vmin -0.4vmin 0 #d53a33;
 	}
 	.gallery-text p{
-		font-size: 90%;
+		font-size: 84%;
 	}
 }
 
