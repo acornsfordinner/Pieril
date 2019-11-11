@@ -5,6 +5,9 @@ body {
     margin-bottom: 0px;
     font-family: 'Ubuntu', sans-serif;
 }
+*{
+    user-select:none;
+}
 .undertext {
     color: #f7f7f7;
 }
