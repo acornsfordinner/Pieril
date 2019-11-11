@@ -732,7 +732,7 @@ h3{
 }
 
 /*Början av css till startsida*/
-.d-block{
+.navbar-brand .d-block{
 	max-height: 65vh;
 	margin: 50px 0;
 	object-fit: cover;
