@@ -240,6 +240,7 @@ body {
         top: 10px;
         transition: 1.5s;
     }
+}
 @media screen and (min-width: 600px) {
         .headertext {
           font-size: 150%;
@@ -250,7 +251,7 @@ body {
           transition: 1.5s;
           
       }
-    
+}
 @media screen and (min-width: 702px) {
  
     .hearticon {
@@ -279,7 +280,7 @@ body {
         max-height: 30px;
         max-width: 30px;
     }
-   
+}
 @media screen and (min-width: 800px) {
     .headertext {
       font-size: 180%;
@@ -290,7 +291,7 @@ body {
       font-size: 160%;
       transition: 1.5s;
     }
-    }
+}
 @media screen and (min-width: 1000px) {
   .headertext {
     font-size: 220%;
