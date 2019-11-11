@@ -308,3 +308,14 @@ body {
     transition: 1.5s;
   }
 }
+
+.preorderpage {
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.textsection {
+    text-align: center;
+    padding-top: 60px;
+}
