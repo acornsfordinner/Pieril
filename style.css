@@ -26,6 +26,10 @@ header.fa-1x {
 	width: 15vw;
 }
 
+.nav-link{
+	font-family: "Ubuntu", sans-serif;
+}
+
 .dropdown-menu {
   background-color: #39375b;
   border: 1px solid #39375b;
