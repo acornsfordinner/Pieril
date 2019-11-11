@@ -696,6 +696,7 @@ footer {
 body {
 	background-color: #745c97;
 	color: white;
+	font-family: "Ubuntu", sans-serif;
 }
 p {
 	font-size: 18px;
