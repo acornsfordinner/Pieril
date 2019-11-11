@@ -539,7 +539,7 @@ figcaption:hover {
 		color: #ffffff;
 		text-shadow: 0.5vmin 0.4vmin 0 green, -0.5vmin -0.4vmin 0 #d53a33;
 	}
-	gallery p{
+	.gallery p{
 		font-size: 90%;
 	}
 }
