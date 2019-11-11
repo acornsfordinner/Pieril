@@ -26,6 +26,21 @@ header.fa-1x {
 	width: 15vw;
 }
 
+.dropdown-menu {
+  background-color: #39375b;
+  border: 1px solid #39375b;
+}
+
+.dropdown-item {
+  color: white;
+  background-color: #39375b;
+}
+
+.dropdown-item:hover {
+  color: #39375b;
+  background-color: #745c97;
+}
+
 .dropdown-toggle::after {
 	content: none;
 }
