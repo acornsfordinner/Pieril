@@ -637,7 +637,7 @@
 
     <!--FOMULÄRET!!!!-->
     
-    <summfrary class="">
+    <summfrary class="formular">
             <h3>Your order is almost ready!<br><br></h3>
                 <!--KNAPPAR-->
                     <a class="btn btn-success" href="payment.html">Buy my pie</a>
@@ -667,7 +667,7 @@
                         </section>
 
                         <!--beroende på valet pie-type-choices så ska antingen pie-customizer-food eller pie-customizer-dessert visas-->
-                        <form id="pie-type-choices">
+                        <form class="pieTypes" id="pie-type-choices">
                             <h3>Food or Dessert</h3>
                             <label><input type="radio" name="pie-type-choices" id="checkbox-dessert">Dessert Pie</label>
                             <label><input type="radio" name="pie-type-choices" id="checkbox-Food">Food Pie</label>
@@ -675,7 +675,7 @@
                     </section>
 
                     <!--DESSERT-->
-                    <section id="pie-customizer-dessert" class="col-12 col-md-6 col-lg-6">
+                    <section id="pie-customizer-dessert" class="col-12 col-md-6 col-lg-6 dessertPie">
                         <h3>Pie Fillers</h3>
                         <section class="pie-filler-dessert-1">
                             <label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-apple">Apple</label>
@@ -704,7 +704,7 @@
 
                     </section>
                     <!--Food-->
-                    <section id="pie-customizer-food" class="col-12 col-md-6 col-lg-6">
+                    <section id="pie-customizer-food" class="col-12 col-md-6 col-lg-6 foodPie">
                         <h3>Pie Filler</h3>
                         <section class="pie-filler-food-1">
                             <label><input type="checkbox" name="pie-filler-food-1" id="checkbox-broccoli">Broccoli</label>
