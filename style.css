@@ -31,18 +31,18 @@ header.fa-1x {
 }
 
 .dropdown-menu {
-  background-color: #39375b;
-  border: 1px solid #39375b;
+	background-color: #39375b;
+	border: 1px solid #39375b;
 }
 
 .dropdown-item {
-  color: white;
-  background-color: #39375b;
+	color: white;
+	background-color: #39375b;
 }
 
 .dropdown-item:hover {
-  color: #39375b;
-  background-color: #745c97;
+	color: #39375b;
+	background-color: #745c97;
 }
 
 .dropdown-toggle::after {
@@ -283,7 +283,7 @@ figcaption:hover {
 	.piesonice {
 		font-size: 13vmin;
 	}
-	
+
 	.gallery-text p{
 		font-size: 74%;
 	}
