@@ -858,20 +858,34 @@ article h3 {
 /*Slutet av css till career.html*/
 
 /*ORDER*/
-summary {
-  max-width: 100vw;
-  padding: 15px 20vw;
-  justify-content: center;
+summary{    
+	display:block;
+	text-align:center;
+    max-width:100vw;
+    padding:  30px 20vw;
+	justify-content: center;
+	height:100vh;
+
 }
 summary > ul {
   margin: 0;
   padding-left: 0;
 }
-summary > p {
-  white-space: nowrap;
-  user-select: none;
+summary > p{
+	white-space: nowrap;
+	user-select:none;
 }
-.hidden {
-  display: none;
+summary > a {
+	margin:auto;
+	padding: 15px 20px;
 }
-/**/
+summary .btn{
+	border-radius:15px;
+}
+.hidden{
+    display: none;
+}
+.btn-success {
+	margin-right:15px;
+	padding-bottom:3px;
+}
