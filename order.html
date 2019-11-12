@@ -22,14 +22,18 @@
     <link rel="Shorcut Icon" href="images/favicon.ico" />
     <script src="https://kit.fontawesome.com/238ea6e7ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="orderstyle.css">
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
+=======
+    <script defer src="selectscript.js"></script>
+>>>>>>> Stashed changes
 </head>
 
 <body>
 
     <!-------NAVBAR SKA GÖMMAS MEDAN EN GÖR VAL-->
-    <header class="container-fluid">
+    <header class="container-fluid navBar">
         <nav class="navbar navbar-light light-blue lighten-4">
             <section class="col-3">
                 <a class="navbar-brand" href="index.html"><img class="d-block d-sm-none" src="images/logo.png" /></a>
@@ -118,11 +122,11 @@
 
                 <h2 class="headertext"> Pick a shape! </h2>
 
-                <img class="leftarrow" src="icons/left second arrow.png" alt="">
+                <a href="#" type="0"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a> 
 
-                <a href="/fndex2.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <a href="#" value="shape"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1" id="circle">
+                <div class="box box1" id="circle">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
@@ -135,7 +139,7 @@
 
                 </div>
 
-                <div class="box2" id="heart">
+                <div class="box box2" id="heart">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
@@ -147,7 +151,7 @@
 
 
                 </div>
-                <div class="box3" id="star">
+                <div class="box box3" id="star">
 
                     <div class="box3sec1"></div>
                     <div class="box3sec2">
@@ -159,7 +163,7 @@
 
 
                 </div>
-                <div class="box4" id="square">
+                <div class="box box4" id="square">
 
                     <div class="box4sec1"></div>
                     <div class="box4sec2">
@@ -185,12 +189,11 @@
                 <!-- absolute objects -->
 
                 <h2 class="headertext"> Select wheat of choice</h2>
-                <a href="/fndex.html">
-                    <img class="leftarrow" src="icons/left second arrow.png" alt=""> </a>
+                <a type ="1" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""> </a>
 
-                <a href="/fndex3.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <a href="#" value="wheat"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1-2" id="wholeGrain">
+                <div class="box box1-2" id="wholeGrain">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
@@ -201,7 +204,7 @@
                     </div>
 
                 </div>
-                <div class="box2-2" id="fineGrain">
+                <div class="box box2-2" id="fineGrain">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
@@ -223,12 +226,11 @@
                 <!-- absolute objects -->
 
                 <h2 class="headertext"> Type of pie</h2>
-                <a href="/fndex2.html">
-                    <img class="leftarrow" src="icons/left second arrow.png" alt=""> </a>
+                <a type ="2" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""> </a>
 
-                <a href="/fndex4.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <a href="#" value="pieType"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1-2" id="dessert">
+                <div class="box box1-2" id="dessert" type ="sweet">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
@@ -239,7 +241,7 @@
                     </div>
 
                 </div>
-                <div class="box2-2" id="Food">
+                <div class="box box2-2" id="Food" type="savoury">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
@@ -254,18 +256,17 @@
             </div>
         </div>
 
-        <div class="outeroutercontainer dessert1">
+        <div class="outeroutercontainer dessert1 sweet1">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
 
                 <h2 class="headertext"> Select your pie fillings </h2>
-                <a href="/fndex3.html">
-                    <img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a type="3" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
 
-                <a href="/fndex5.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <a value="filling1" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1" id="apple">
+                <div class="box box1" id="apple">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
@@ -276,7 +277,7 @@
                     </div>
 
                 </div>
-                <div class="box2" id="cherry">
+                <div class="box box2" id="cherry">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
@@ -288,7 +289,7 @@
 
 
                 </div>
-                <div class="box3" id="chocolate">
+                <div class="box box3" id="chocolate">
 
                     <div class="box3sec1"></div>
                     <div class="box3sec2">
@@ -300,7 +301,7 @@
 
 
                 </div>
-                <div class="box4" id="peach">
+                <div class="box box4" id="peach">
 
                     <div class="box4sec1"></div>
                     <div class="box4sec2">
@@ -318,18 +319,17 @@
 
 
 
-        <div class="outeroutercontainer dessert2">
+        <div class="outeroutercontainer dessert2 sweet2">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
 
                 <h2 class="headertext"> More pie fillings </h2>
-                <a href="/fndex4.html">
-                    <img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a type="4" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
 
-                <a href="/fndex6.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <a value="filling2" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1" id="blueberry">
+                <div class="box box1" id="blueberry">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
@@ -341,7 +341,7 @@
                     </div>
 
                 </div>
-                <div class="box2" id="strawberry">
+                <div class="box box2" id="strawberry">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
@@ -354,7 +354,7 @@
 
 
                 </div>
-                <div class="box3" id="pear">
+                <div class="box box3" id="pear">
 
                     <div class="box3sec1"></div>
                     <div class="box3sec2">
@@ -366,7 +366,7 @@
 
 
                 </div>
-                <div class="box4" id="raspberry">
+                <div class=" box box4" id="raspberry">
 
                     <div class="box4sec1"></div>
                     <div class="box4sec2">
@@ -385,18 +385,17 @@
 
 
 
-        <div class="outeroutercontainer dessert3">
+        <div class="outeroutercontainer dessert3 sweet3">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
 
                 <h2 class="headertext"> Finally, select desired topping </h2>
-                <a href="/fndex5.html">
-                    <img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a type="5" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
 
-                <a href="/fndex7.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <a value="filling3" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1" id="cream">
+                <div class="box box1" id="cream">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
@@ -407,7 +406,7 @@
                     </div>
 
                 </div>
-                <div class="box2" id="sprinkles">
+                <div class="box box2" id="sprinkles">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
@@ -419,7 +418,7 @@
 
 
                 </div>
-                <div class="box3" id="chocolateTopping">
+                <div class="box box3" id="chocolateTopping">
 
                     <div class="box3sec1"></div>
                     <div class="box3sec2">
@@ -431,7 +430,7 @@
 
 
                 </div>
-                <div class="box4" id="blueberry">
+                <div class="box box4" id="blueberry">
 
                     <div class="box4sec1"></div>
                     <div class="box4sec2">
@@ -445,18 +444,17 @@
             </div>
         </div>
 
-        <div class="outeroutercontainer food1">
+        <div class="outeroutercontainer food1 savoury1">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
 
                 <h2 class="headertext"> Select filling </h2>
-                <a href="/fndex6.html">
-                    <img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a type="6" href="#"> <img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
 
-                <a href="/fndex8.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <a value="savoury1" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1" id="broccoli">
+                <div class="box box1" id="broccoli">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
@@ -467,7 +465,7 @@
                     </div>
 
                 </div>
-                <div class="box2" id="chicken">
+                <div class="box box2" id="chicken">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
@@ -480,7 +478,7 @@
 
 
                 </div>
-                <div class="box3" id="shrooms">
+                <div class="box box3" id="shrooms">
 
                     <div class="box3sec1"></div>
                     <div class="box3sec2">
@@ -492,7 +490,7 @@
 
 
                 </div>
-                <div class="box4" id="spinach">
+                <div class="box box4" id="spinach">
 
                     <div class="box4sec1"></div>
                     <div class="box4sec2">
@@ -508,18 +506,17 @@
 
 
 
-        <div class="outeroutercontainer food2">
+        <div class="outeroutercontainer food2 savoury2">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
 
                 <h2 class="headertext"> Select more filling </h2>
-                <a href="/fndex7.html">
-                    <img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a type="7" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
 
-                <a href="/fndex9.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <a value="savoury2" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1" id="cheese">
+                <div class="box box1" id="cheese">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
@@ -530,7 +527,7 @@
                     </div>
 
                 </div>
-                <div class="box2" id="ham">
+                <div class="box box2" id="ham">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
@@ -542,7 +539,7 @@
 
 
                 </div>
-                <div class="box3" id="chili">
+                <div class="box box3" id="chili">
 
                     <div class="box3sec1"></div>
                     <div class="box3sec2">
@@ -554,7 +551,7 @@
 
 
                 </div>
-                <div class="box4" id="onion">
+                <div class="box box4" id="onion">
 
                     <div class="box4sec1"></div>
                     <div class="box4sec2">
@@ -568,18 +565,17 @@
             </div>
         </div>
 
-        <div class="outeroutercontainer food3">
+        <div class="outeroutercontainer food3 savoury3">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
 
                 <h2 class="headertext"> Select your desired topping </h2>
-                <a href="/fndex8.html">
-                    <img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a type="8" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
 
-                <a href="/fndex.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <a value="savoury3" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1" id="avocado">
+                <div class="box box1" id="avocado">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
@@ -590,7 +586,7 @@
                     </div>
 
                 </div>
-                <div class="box2" id="cheeseTopping">
+                <div class="box box2" id="cheeseTopping">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
@@ -602,7 +598,7 @@
 
 
                 </div>
-                <div class="box3" id="chanterelle">
+                <div class="box box3" id="chanterelle">
 
                     <div class="box3sec1"></div>
                     <div class="box3sec2">
@@ -614,7 +610,7 @@
 
 
                 </div>
-                <div class="box4" id="mayo">
+                <div class="box box4" id="mayo">
 
                     <div class="box4sec1"></div>
                     <div class="box4sec2">
@@ -639,8 +635,13 @@
 
         <!------------------------------------->
     </div>
-    
-    
+
+<<<<<<< Updated upstream
+    <!--KNAPPAR-->
+    <button type="submit">
+        <a class="btn button-success" href="payment.html">Buy your pie</a></button>
+
+
     <!--FOMULÄRET!!!!-->
     
     <summary>
@@ -783,9 +784,77 @@
                                 </section>
 
                             </section>
+=======
+    <!--FOMULÄRET!!!!-->
+    <di class="formular">
+        <form id="pie-customizer-main" >
+            <div class="pieTypes"> 
+                <form id="pie-type-choices">
+                        <h3>Food or Dessert</h3>
+                        <label><input type="radio" name="pie-type-choices" id="checkbox-dessert">Dessert Pie</label>
+                        <label><input type="radio" name="pie-type-choices" id="checkbox-Food">Food Pie</label>
+                </form>
+            </div>
+            <section id="pie-customizer-root" class="pieform" >
+                <h3>Shape</h3>
+                <section class="pie-shapes">
+
+                    <section>
+                        <label><input type="radio" name="pie-shapes" id="checkbox-circle">Circle</label>
+                        <label><input type="radio" name="pie-shapes" id="checkbox-square">Square</label>
+                        <label><input type="radio" name="pie-shapes" id="checkbox-heart">Heart</label>
+                        <label><input type="radio" name="pie-shapes" id="checkbox-star"> Star</label>
+                    </section>
+                </section>
+
+                <h3>Grain Type</h3>
+                <section class="pie-grain-types">
+                    <section>
+                        <label><input type="radio" name="pie-grain-types" id="checkbox-wholeGrain">Whole Wheat</label>
+                        <label><input type="radio" name="pie-grain-types" id="checkbox-fineGrain">Whole</label>
+
+                    </section>
+                </section>
+
+                <!--beroende på valet pie-type-choices så ska antingen pie-customizer-food eller pie-customizer-dessert visas-->
+                
+                
+
+            </section>
+
+
+            <!--DESSERT-->
+            <section id="pie-customizer-dessert" class="dessertPie">
+                <h3>Dessert Pie Filler 1</h3>
+                <section class="pie-filler-dessert-1">
+                        <label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-apple">Apple</label>
+                        <label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-peach">Peach</label>
+                        <label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-cherry">Cherry</label>
+                        <label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-chocolate">Chocolate</label>
+                </section>
+
+                <h3>Dessert Pie Filler 2</h3>
+                <section class="pie-filler-dessert-2">
+                    <label><input type="checkbox" name="pie-filler-dessert-2" id="checkbox-blueberry">Blueberry</label>
+                    <label><input type="checkbox" name="pie-filler-dessert-2" id="checkbox-strawberry">Strawberry</label>
+                    <label><input type="checkbox" name="pie-filler-dessert-2" id="checkbox-pear">Pear</label>
+                    <label><input type="checkbox" name="pie-filler-dessert-2" id="checkbox-raspberry">Raspberry</label>
+               
+                </section>
+
+                <h3>Dessert Pie Topping</h3>
+                <section class="pie-topping-dessert">
+                    <label><input type="checkbox" name="pie-topping-dessert" id="checkbox-cream">Whipped-cream</label>
+                    <label><input type="checkbox" name="pie-topping-dessert" id="checkbox-sprinkles">Sprinkles</label>
+                    <label><input type="checkbox" name="pie-topping-dessert" id="checkbox-chocolateTopping">Melted white chocolate</label>
+                    <label><input type="checkbox" name="pie-topping-dessert" id="checkbox-blueberry">Blueberry</label>
+                   
+                </section>
+>>>>>>> Stashed changes
 
 
 
+<<<<<<< Updated upstream
                         </section>
 
 
@@ -879,6 +948,32 @@
 
 
                     </section>
+=======
+            <!--Food-->
+            <section id="food pie-customizer-food" class="foodPie">
+                <h3>Food Pie Filler 1</h3>
+                <section class="pie-filler-food-1">
+                    <label><input type="checkbox" name="pie-filler-food-1" id="checkbox-broccoli">Broccoli</label>
+                    <label><input type="checkbox" name="pie-filler-food-1" id="checkbox-chicken">Chicken</label>
+                    <label><input type="checkbox" name="pie-filler-food-1" id="checkbox-shrooms">Shrooms</label>
+                    <label><input type="checkbox" name="pie-filler-food-1" id="checkbox-spinach">Spinach</label>
+                </section>
+
+                <h3>Food Pie Filler 2</h3>
+                <section class="pie-filler-food-2">
+                    <label><input type="checkbox" name="pie-filler-food-2" id="checkbox-cheese">Cheese</label>
+                    <label><input type="checkbox" name="pie-filler-food-2" id="checkbox-ham">Ham</label>
+                    <label><input type="checkbox" name="pie-filler-food-2" id="checkbox-chili">Spicy chillies</label>
+                    <label><input type="checkbox" name="pie-filler-food-2" id="checkbox-onion">Onion</label>
+                </section>
+
+                <h3>Food Pie Topping</h3>
+                <section class="pie-topping-food">
+                    <label><input type="checkbox" name="pie-topping-food" id="checkbox-Avocado">Avocado</label>
+                    <label><input type="checkbox" name="pie-topping-food" id="checkbox-cheeseTopping">Cheese</label>
+                    <label><input type="checkbox" name="pie-topping-food" id="checkbox-chanterelle">Chanterelle</label>
+                    <label><input type="checkbox" name="pie-topping-food" id="checkbox-mayo">Mayonnaise</label>
+>>>>>>> Stashed changes
                 </section>
             </section>
         </ul>
