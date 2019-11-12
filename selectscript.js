@@ -1,4 +1,4 @@
-$('.wheat, .pieType, .sweet1, .sweet2, .sweet3,.savoury1, .savoury2, .savoury3, .pie-customizer-dessert, .pie-customizer-food, .formular').hide();
+$('.shapes,.wheat, .pieType, .sweet1, .sweet2, .sweet3,.savoury1, .savoury2, .savoury3, .pie-customizer-dessert, .pie-customizer-food, .formular').hide();
 
 
 
@@ -9,21 +9,38 @@ let currentPage;
 let pieType = 0;
 
 //#### selecterd 
-let selected;
+
+//#### go to firs page 
+$('button').click(function(){
+    $('.preorderpage').hide();
+    $('.navBar').hide();
+    $('.shapes').show();
+});
+//### select radio button
+// $(".box").click(function(){
+//     selected = $(this).attr('id')
+//     $("#circle").prop("checked", true);
+// });
+
 
 //##### change background-color
 
 $('.box').click(function(){
+    let selected = $(this).attr('id');
+    let selectedId = $("#checkbox-" + selected);
+    selectedId.prop("checked", true);
     pieType = $(this).attr('type');
     $(this).parent().find('.box').css("background-color", "");
     $(this).css("background-color", "#afa0c5");
 });
 //### Pie Type Chosen
+
 function hidePieType(type){
     if(type =='sweet'){
         console.log('sweet selected')
         $('.sweet1').show();
         $('.pieType').hide();
+        
     }
     if(type == 'savoury'){
         $('.pieType').hide();
@@ -38,6 +55,11 @@ $('a').click(function(){
     //backward
     currentPage = $(this).attr('type')
     switch(currentPage){
+        case '0':
+            $('.shapes').hide();
+            $('.navBar').show();
+            $('.preorderpage').show();
+        break;
         case '1':
             $('.wheat').hide();
             $('.shapes').show();
@@ -95,6 +117,10 @@ $('a').click(function(){
         case 'filling3':
             $('.sweet3').hide();
             $('.formular').show();
+            $('.foodPie').hide();
+            $('.pieTypes').hide();
+
+
         break;
         case 'savoury1':
             $('.savoury1').hide();
@@ -107,6 +133,9 @@ $('a').click(function(){
         case 'savoury3':
             $('.savoury3').hide();
             $('.formular').show();
+            $('.dessertPie').hide();
+            $('.pieTypes').hide();
+
         break;
     }
 });
