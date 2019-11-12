@@ -1,18 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h4 class="automessage">We appreciate you showing interest, and wanting to work with us.<br> You will be contacted shortly. Have a pleasant day.<br>   
-    </h4>
-    <a href="index.html"><button class="homebutton">Home</button></a>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Feedback</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="Stylesheet" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=League+Script|Sigmar+One|Ubuntu|Shadows+Into+Light&display=swap" rel="stylesheet" />
+		<link rel="Shorcut Icon" href="images/favicon.ico" />
+		<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+				integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+				crossorigin="anonymous"></script>
+		<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+				crossorigin="anonymous"></script>
+		<script defer src="main.js"></script>
+		<script src="https://kit.fontawesome.com/238ea6e7ae.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<header class="container-fluid">
+			<nav class="navbar navbar-light light-blue lighten-4">
+				<section class="col-3 col-sm-1">
+					<a class="navbar-brand" href="index.html"><img class="d-block d-sm-none" src="images/logo.png" /></a>
+				</section>
+				<section class="col-6 col-sm-10 justify-content-center d-none d-sm-block">
+					<ul class="justify-content-center nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Start</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="order.html">Order</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="gallery.html">Gallery</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="about.html" role="button"
+							   aria-haspopup="true" aria-expanded="false">About Us</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="about.html">About Us</a>
+								<a class="dropdown-item" href="career.html">Work With Us</a>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="col-3 col-sm-1 text-right hamburger">
+					<ul class="nav nav-pills d-block d-sm-none">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+							   aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars fa-1x"></i></a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="index.html">Start</a>
+								<a class="dropdown-item" href="order.html">Order</a>
+								<a class="dropdown-item" href="gallery.html">Gallery</a>
+								<a class="dropdown-item" href="about.html">About Us</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="career.html">Work With Us</a>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</nav>
+		</header>
 
 
-    
-</body>
+		<main class="text-center mt-5">
+			<h4 class="automessage">We appreciate you showing interest, and wanting to work with us.<br> You will be contacted shortly. Have a pleasant day.<br>   
+			</h4>
+			<a href="index.html"><button class="homebutton mt-3 btn-primary">Home</button></a> 
+		</main>
+
+
+		<footer class="fixed-bottom container-fluid">
+			<section class="row">
+				<section class="info col-7 col-sm-9 col-xl-10">
+					<p>
+						Address: Bergsgatan 12<br />
+						Contact: 040-123456
+					</p>
+				</section>
+
+				<section class="icons col-5 col-sm-3 col-xl-2">
+					<a href="https://www.facebook.com" class="fab fa-facebook"></a>
+					<a href="https://www.instagram.com" class="fab fa-instagram"></a>
+					<a href="https://www.gmail.com" class="fas fa-envelope-square"></a>
+				</section>
+			</section>
+		</footer>
+	</body>
 </html>
