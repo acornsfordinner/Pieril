@@ -1,130 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pay with card</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=League+Script|Sigmar+One|Ubuntu|Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="Shorcut Icon" href="images/favicon.ico" />
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="Stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/238ea6e7ae.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Pay with card</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-	<link href="https://fonts.googleapis.com/css?family=League+Script|Sigmar+One|Ubuntu|Shadows+Into+Light&display=swap"
-		rel="stylesheet" />
-	<link rel="Shorcut Icon" href="images/favicon.ico" />
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="Stylesheet" href="style.css" />
-	<script src="https://kit.fontawesome.com/238ea6e7ae.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-light light-blue lighten-4">
+        <section class="col-3 col-sm-2">
+          <a class="navbar-brand" href="index.html"
+            ><img class="d-block d-sm-none" src="images/logo.png"
+          /></a>
+        </section>
+        <section
+          class="col-6 col-sm-8 justify-content-center d-none d-sm-block"
+        >
+          <ul class="justify-content-center nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Start</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="about.html"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >About Us</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="about.html">About Us</a>
+                <a class="dropdown-item" href="career.html">Work With Us</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="col-3 col-sm-2 text-right hamburger">
+          <ul class="nav nav-pills d-block d-sm-none">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                ><i class="fas fa-bars fa-1x"></i
+              ></a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="index.html">Start</a>
+                <a class="dropdown-item" href="order.html">Order</a>
+                <a class="dropdown-item" href="gallery.html">Gallery</a>
+                <a class="dropdown-item" href="about.html">About Us</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="career.html">Work With Us</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
 
+    <h3 class="text-center">Card payment</h3>
+    <form id="paymentForm">
+      <section class="container">
+        <section class="form-group">
+          <label for="cardNumber">Card Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cardNumber"
+            placeholder="xxxx xxxx xxxx xxxx"
+            required
+          />
+        </section>
+        <section class="form-row">
+          <section class="form-group col-md-6">
+            <label for="dateOut">Card expiry date</label>
+            <input
+              type="text"
+              class="form-control"
+              id="dateOut"
+              placeholder="month/year"
+              equired
+            />
+          </section>
+          <section class="form-group col-md-6">
+            <label for="cvc">CVC</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cvc"
+              placeholder="xxx"
+              required
+            />
+          </section>
+        </section>
+        <section class="form-group">
+          <section class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="gridCheck"
+              required
+            />
+            <label class="form-check-label" for="gridCheck">
+              Accept terms and conditions
+            </label>
+          </section>
+        </section>
+        <button
+          type="submit"
+          class="formPageBtn btn btn-success"
+          formaction="payment-verified.html"
+        >
+          Confirm Payment
+        </button>
 
-<body>
-
-
-	<header class="container-fluid">
-    <nav class="navbar navbar-light light-blue lighten-4">
-      <section class="col-3 col-md-2">
-        <a class="navbar-brand" href="index.html"><img class="d-block d-sm-none" src="images/logo.png" /></a>
+        <a class="formPageBtn btn btn-danger" href="payment.html"
+          >Cancel Payment</a
+        >
       </section>
-      <section class="col-6 col-md-8 justify-content-center d-none d-sm-block">
-        <ul class="justify-content-center nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Start</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="order.html">Order</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="about.html" role="button"
-              aria-haspopup="true" aria-expanded="false">About Us</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="about.html">About Us</a>
-              <a class="dropdown-item" href="career.html">Work With Us</a>
-            </div>
-          </li>
-        </ul>
+    </form>
+
+    <footer class="container-fluid fixed-bottom">
+      <section class="row">
+        <section class="info col-7 col-sm-9 col-xl-10">
+          <p>
+            Address: Bergsgatan 12<br />
+            Contact: 040-123456
+          </p>
+        </section>
+
+        <section class="icons col-5 col-sm-3 col-xl-2">
+          <a href="https://www.facebook.com" class="fab fa-facebook"></a>
+          <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+          <a href="https://www.gmail.com" class="fas fa-envelope-square"></a>
+        </section>
       </section>
-      <section class="col-3 col-md-2 text-right hamburger">
-        <ul class="nav nav-pills d-block d-sm-none">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false"><i class="fas fa-bars fa-1x"></i></a>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="index.html">Start</a>
-              <a class="dropdown-item" href="order.html">Order</a>
-              <a class="dropdown-item" href="gallery.html">Gallery</a>
-              <a class="dropdown-item" href="about.html">About Us</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="career.html">Work With Us</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </nav>
-  </header>
-
-
-
-
-	<h3 class="text-center">Card payment</h3>
-	<form id="paymentForm">
-		<section class="container">
-			<section class="form-group">
-				<label for="cardNumber">Card Number</label>
-				<input type="text" class="form-control" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx" required>
-			</section>
-			<section class="form-row">
-				<section class="form-group col-md-6">
-					<label for="dateOut">Card expiry date</label>
-					<input type="text" class="form-control" id="dateOut" placeholder="month/year" equired>
-				</section>
-				<section class="form-group col-md-6">
-					<label for="cvc">CVC</label>
-					<input type="text" class="form-control" id="cvc" placeholder="xxx" required>
-				</section>
-			</section>
-			<section class="form-group">
-				<section class="form-check">
-					<input class="form-check-input" type="checkbox" id="gridCheck" required>
-					<label class="form-check-label" for="gridCheck">
-						Accept terms and conditions
-					</label>
-				</section>
-			</section>
-			<button type="submit" class="formPageBtn btn btn-success" formaction="payment-verified.html">Confirm
-				Payment</button>
-
-			<a class="formPageBtn btn btn-danger" href="payment.html">Cancel Payment</a>
-		</section>
-	</form>
-
-
-	<footer class="container-fluid fixed-bottom">
-			<section class="row">
-				<section class="info col-7 col-sm-9 col-xl-10">
-					<p>
-						Address: Bergsgatan 12<br />
-						Contact: 040-123456
-					</p>
-				</section>
-
-				<section class="icons col-5 col-sm-3 col-xl-2">
-					<a href="https://www.facebook.com" class="fab fa-facebook"></a>
-					<a href="https://www.instagram.com" class="fab fa-instagram"></a>
-					<a href="https://www.gmail.com" class="fas fa-envelope-square"></a>
-				</section>
-			</section>
-		</footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>
