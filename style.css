@@ -857,7 +857,7 @@ article h3 {
 
 /*ORDER*/
 summary{    
-    min-width:100vw;
+    max-width:100vw;
     padding:  15px 20vw;
     justify-content: center;
 }
