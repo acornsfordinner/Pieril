@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Order</title>
-    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -23,8 +21,9 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="Shorcut Icon" href="images/favicon.ico" />
     <script src="https://kit.fontawesome.com/238ea6e7ae.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="orderstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -640,237 +639,238 @@
         <!------------------------------------->
     </div>
 
-    <!--FOMULÄRET!!!!-->
-    <div>
-        <form id="pie-customizer-main">
-
-            <section id="pie-customizer-root">
-                <h3>Shape</h3>
-                <section class="pie-shapes">
-
-                    <section>
-                        <label for="pie-shape-circle">Circle</label>
-                        <input type="radio" name="pie-shape" id="pie-shape-circle">
-                    </section>
-                    <section class="pie-shapes">
-                        <label for="pie-shape-square">Square</label>
-                        <input type="radio" name="pie-shape" id="pie-shape-square">
-                    </section>
-                    <section class="pie-shapes">
-                        <label for="pie-shape-heart">Heart</label>
-                        <input type="radio" name="pie-shape" id="pie-shape-heart">
-                    </section>
-                    <section class="pie-shapes">
-                        <label for="pie-shape-star">Star</label>
-                        <input type="radio" name="pie-shape" id="pie-shape-star">
-                    </section>
-                </section>
-
-                <h3>Grain Type</h3>
-                <section class="pie-grain-types">
-                    <section>
-                        <label for="whole-wheat">Whole Wheat</label>
-                        <input type="radio" name="pie-grain-type" value="1" id="whole-wheat">
-                    </section>
-                    <section>
-                        <label for="plain-wheat">Plain Wheat</label>
-                        <input type="radio" name="pie-grain-type" value="2" id="plain-wheat">
-
-                    </section>
-                </section>
-
-                <!--beroende på valet pie-type-choices så ska antingen pie-customizer-food eller pie-customizer-dessert visas-->
-                <h3>Food or Dessert</h3>
-                <form id="pie-type-choices">
-                    <label for="pie-type-food">Food Pie</label>
-                    <input type="radio" class="paj" name="pie-type-choice" id="pie-type-food" value="1">
-
-                    <label for="pie-type-dessert">Dessert Pie</label>
-                    <input type="radio" class="paj" name="pie-type-choice" id="pie-type-dessert">
-                </form>
-
-            </section>
-
-
-            <!--DESSERT-->
-            <section id="pie-customizer-dessert">
-                <h3>Dessert Pie Filler 1</h3>
-                <section class="pie-filler-dessert-1">
-                    <section>
-                        <label for="pie-filler-apple">Apple</label>
-                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-apple" id="pie-filler-apple">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-peach">Peach</label>
-                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-peach" id="pie-filler-peach">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-cherry">Cherry</label>
-                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-cherry"
-                            id="pie-filler-cherry">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-chocolate">Chocolate</label>
-                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-chocolate"
-                            id="pie-filler-chocolate">
-                    </section>
-                </section>
-
-                <h3>Dessert Pie Filler 2</h3>
-                <section class="pie-filler-dessert-2">
-                    <section>
-                        <label for="pie-filler-blueberry">Blueberry</label>
-                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-blueberry"
-                            id="pie-filler-blueberry">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-strawberry">Strawberry</label>
-                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-strawberry"
-                            id="pie-filler-strawberry">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-pear">Pear</label>
-                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-pear" id="pie-filler-pear">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-raspberry">Raspberry</label>
-                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-raspberry"
-                            id="pie-filler-raspberry">
-                    </section>
-                </section>
-
-                <h3>Dessert Pie Topping</h3>
-                <section class="pie-topping-dessert">
-                    <section>
-                        <section>
-                            <label for="pie-topping-sprinkles">Sprinkles</label>
-                            <input type="checkbox" class="pie-topping-dessert" name="pie-topping-sprinkles"
-                                id="pie-topping-sprinkles">
-                        </section>
-                        <section>
-                            <label for="pie-topping-whippedcream">Whipped Cream</label>
-                            <input type="checkbox" class="pie-topping-dessert" name="pie-topping-whippedcream"
-                                id="pie-topping-whippedcream">
-                        </section>
-                        <section>
-                            <label for="pie-topping-chocolate">Chocolate</label>
-                            <input type="checkbox" class="pie-topping-dessert" name="pie-topping-chocolate"
-                                id="pie-topping-chocolate">
-                        </section>
-                        <section>
-                            <label for="pie-topping-blueberry">Blueberries</label>
-                            <input type="checkbox" class="pie-topping-dessert" name="pie-topping-blueberry"
-                                id="pie-topping-blueberry">
-                        </section>
-
-                    </section>
-
-
-
-                </section>
-
-
-            </section>
-
-            <!--Food-->
-            <section id="pie-customizer-food">
-                <h3>Food Pie Filler 1</h3>
-                <section class="pie-filler-food-1">
-                    <section>
-                        <label for="pie-filler-spinach">Spinach</label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-spinach"
-                            id="pie-filler-spinach">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-broccoli">Broccoli</label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-broccoli"
-                            id="pie-filler-broccoli">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-ham">Ham</label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-ham" id="pie-filler-ham">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-cheese">Cheese</label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-cheese" id="pie-filler-cheese">
-                    </section>
-                </section>
-
-                <h3>Food Pie Filler 2</h3>
-                <section class="pie-filler-food-2">
-                    <section>
-                        <label for="pie-filler-mushroom">Mushroom</label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-mushroom"
-                            id="pie-filler-mushroom">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-chicken">Chicken</label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-chicken"
-                            id="pie-filler-chicken">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-chily">Spicy Chilies/label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-chily" id="pie-filler-chily">
-                    </section>
-
-                    <section>
-                        <label for="pie-filler-onion">Onion</label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-onion"
-                            id="pie-filler-onion">
-                    </section>
-                </section>
-
-                <h3>Food Pie Topping</h3>
-                <section class="pie-topping-food">
-                    <section>
-                        <section>
-                            <label for="pie-topping-chanterelle">Chanterelle</label>
-                            <input type="checkbox" class="pie-topping-food" name="pie-topping-chanterelle"
-                                id="pie-topping-chanterelle">
-                        </section>
-                        <section>
-                            <label for="pie-topping-cheese">Cheese</label>
-                            <input type="checkbox" class="pie-topping-food" name="pie-topping-cheese"
-                                id="pie-topping-cheese">
-                        </section>
-                        <section>
-                            <label for="pie-topping-guacamole">Guacamole</label>
-                            <input type="checkbox" class="pie-topping-food" name="pie-topping-guacamole"
-                                id="pie-topping-guacamole">
-                        </section>
-                        <section>
-                            <label for="pie-topping-mayo">Mayo</label>
-                            <input type="checkbox" class="pie-topping-food" name="pie-topping-mayo"
-                                id="pie-topping-mayo">
-                        </section>
-
-                    </section>
-
-
-
-                </section>
-
-
-
-
-            </section>
-
             <!--KNAPPAR-->
             <button type="submit">
                 <a class="btn button-success" href="payment.html">Buy your pie</a></button>
-        </form>
-    </div>
+    
+
+    <!--FOMULÄRET!!!!-->
+    
+    <summary>
+            <p>Modify my pie
+                <span><i class="fas fa-chevron-down"></i></span>
+                <span  class="hidden"><i class="fas fa-chevron-up"></i></span>
+            </p>
+            <ul>
+                        <section id="pie-customizer-root" class="col-12 col-md-6 col-lg-6" >
+                                <h3>Shape</h3>
+                                <section class="pie-shapes">
+                
+                                    <section>
+                                        <label for="pie-shape-circle">Circle</label>
+                                        <input type="radio" name="pie-shape" id="pie-shape-circle">
+                                    </section>
+                                    <section class="pie-shapes">
+                                        <label for="pie-shape-square">Square</label>
+                                        <input type="radio" name="pie-shape" id="pie-shape-square">
+                                    </section>
+                                    <section class="pie-shapes">
+                                        <label for="pie-shape-heart">Heart</label>
+                                        <input type="radio" name="pie-shape" id="pie-shape-heart">
+                                    </section>
+                                    <section class="pie-shapes">
+                                        <label for="pie-shape-star">Star</label>
+                                        <input type="radio" name="pie-shape" id="pie-shape-star">
+                                    </section>
+                                </section>
+                
+                                <h3>Grain Type</h3>
+                                <section class="pie-grain-types">
+                                    <section>
+                                        <label for="whole-wheat">Whole Wheat</label>
+                                        <input type="radio" name="pie-grain-type" value="1" id="whole-wheat">
+                                    </section>
+                                    <section>
+                                        <label for="plain-wheat">Plain Wheat</label>
+                                        <input type="radio" name="pie-grain-type" value="2" id="plain-wheat">
+                
+                                    </section>
+                                </section>
+                
+                                <!--beroende på valet pie-type-choices så ska antingen pie-customizer-food eller pie-customizer-dessert visas-->
+                                <h3>Food or Dessert</h3>
+                                <form id="pie-type-choices">
+                                    <label for="pie-type-food">Food Pie</label>
+                                    <input type="radio" class="paj" name="pie-type-choice" id="pie-type-food" value="1">
+                
+                                    <label for="pie-type-dessert">Dessert Pie</label>
+                                    <input type="radio" class="paj" name="pie-type-choice" id="pie-type-dessert">
+                                </form>
+                
+                            </section>
+                       <!--DESSERT-->
+                            <section id="pie-customizer-dessert" class="col-12 col-md-6 col-lg-6">
+                                <h3>Pie Fillers</h3>
+                                <section class="pie-filler-dessert-1">
+                                    <section>
+                                        <label for="pie-filler-apple">Apple</label>
+                                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-apple" id="pie-filler-apple">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-peach">Peach</label>
+                                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-peach" id="pie-filler-peach">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-cherry">Cherry</label>
+                                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-cherry"
+                                            id="pie-filler-cherry">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-chocolate">Chocolate</label>
+                                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-chocolate"
+                                            id="pie-filler-chocolate">
+                                    </section>
+                                </section>
+                
+                                <section class="pie-filler-dessert-2">
+                                    <section>
+                                        <label for="pie-filler-blueberry">Blueberry</label>
+                                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-blueberry"
+                                            id="pie-filler-blueberry">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-strawberry">Strawberry</label>
+                                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-strawberry"
+                                            id="pie-filler-strawberry">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-pear">Pear</label>
+                                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-pear" id="pie-filler-pear">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-raspberry">Raspberry</label>
+                                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-raspberry"
+                                            id="pie-filler-raspberry">
+                                    </section>
+                                </section>
+                
+                                <h3>Pie Toppings</h3>
+                                <section class="pie-topping-dessert">
+                                    <section>
+                                        <section>
+                                            <label for="pie-topping-sprinkles">Sprinkles</label>
+                                            <input type="checkbox" class="pie-topping-dessert" name="pie-topping-sprinkles"
+                                                id="pie-topping-sprinkles">
+                                        </section>
+                                        <section>
+                                            <label for="pie-topping-whippedcream">Whipped Cream</label>
+                                            <input type="checkbox" class="pie-topping-dessert" name="pie-topping-whippedcream"
+                                                id="pie-topping-whippedcream">
+                                        </section>
+                                        <section>
+                                            <label for="pie-topping-chocolate">Chocolate</label>
+                                            <input type="checkbox" class="pie-topping-dessert" name="pie-topping-chocolate"
+                                                id="pie-topping-chocolate">
+                                        </section>
+                                        <section>
+                                            <label for="pie-topping-blueberry">Blueberries</label>
+                                            <input type="checkbox" class="pie-topping-dessert" name="pie-topping-blueberry"
+                                                id="pie-topping-blueberry">
+                                        </section>
+                
+                                    </section>
+                
+                
+                
+                                </section>
+                
+                
+                            </section>
+                       <!--Food-->
+                            <section id="pie-customizer-food" class="col-12 col-md-6 col-lg-6">
+                                <h3>Pie Filler</h3>
+                                <section class="pie-filler-food-1">
+                                    <section>
+                                        <label for="pie-filler-spinach">Spinach</label>
+                                        <input type="checkbox" class="pie-filler-food" name="pie-filler-spinach"
+                                            id="pie-filler-spinach">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-broccoli">Broccoli</label>
+                                        <input type="checkbox" class="pie-filler-food" name="pie-filler-broccoli"
+                                            id="pie-filler-broccoli">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-ham">Ham</label>
+                                        <input type="checkbox" class="pie-filler-food" name="pie-filler-ham" id="pie-filler-ham">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-cheese">Cheese</label>
+                                        <input type="checkbox" class="pie-filler-food" name="pie-filler-cheese" id="pie-filler-cheese">
+                                    </section>
+                                </section>
+                
+                                <section class="pie-filler-food-2">
+                                    <section>
+                                        <label for="pie-filler-mushroom">Mushroom</label>
+                                        <input type="checkbox" class="pie-filler-food" name="pie-filler-mushroom"
+                                            id="pie-filler-mushroom">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-chicken">Chicken</label>
+                                        <input type="checkbox" class="pie-filler-food" name="pie-filler-chicken"
+                                            id="pie-filler-chicken">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-chily">Spicy Chilies</label>
+                                        <input type="checkbox" class="pie-filler-food" name="pie-filler-chily" id="pie-filler-chily">
+                                    </section>
+                
+                                    <section>
+                                        <label for="pie-filler-onion">Onion</label>
+                                        <input type="checkbox" class="pie-filler-food" name="pie-filler-onion"
+                                            id="pie-filler-onion">
+                                    </section>
+                                </section>
+                
+                                <h3>Pie Topping</h3>
+                                <section class="pie-topping-food">
+                                    <section>
+                                        <section>
+                                            <label for="pie-topping-chanterelle">Chanterelle</label>
+                                            <input type="checkbox" class="pie-topping-food" name="pie-topping-chanterelle"
+                                                id="pie-topping-chanterelle">
+                                        </section>
+                                        <section>
+                                            <label for="pie-topping-cheese">Cheese</label>
+                                            <input type="checkbox" class="pie-topping-food" name="pie-topping-cheese"
+                                                id="pie-topping-cheese">
+                                        </section>
+                                        <section>
+                                            <label for="pie-topping-guacamole">Guacamole</label>
+                                            <input type="checkbox" class="pie-topping-food" name="pie-topping-guacamole"
+                                                id="pie-topping-guacamole">
+                                        </section>
+                                        <section>
+                                            <label for="pie-topping-mayo">Mayo</label>
+                                            <input type="checkbox" class="pie-topping-food" name="pie-topping-mayo"
+                                                id="pie-topping-mayo">
+                                        </section>
+                
+                                    </section>
+                
+                
+                
+                                </section>
+                
+                
+                
+                
+                            </section>
+            </ul>
+
+        </summary>
 
 
     

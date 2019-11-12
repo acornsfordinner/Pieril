@@ -855,3 +855,22 @@ article h3 {
 /*Slutet av css till career.html*/
 
 
+/*ORDER*/
+summary{    
+    min-width:100vw;
+    padding:  15px 20vw;
+    justify-content: center;
+}
+summary > ul{
+    margin:0;
+    padding-left:0;
+}
+summary > p{
+    white-space: nowrap;
+    
+    user-select:none;
+}
+.hidden{
+    display: none;
+}
+/**/
