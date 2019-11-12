@@ -718,6 +718,13 @@ h3{
 	font-family: "Shadows Into Light", cursive;
 	font-size: 230%!important;
 }
+.fat-text {
+	font-weight: 900;
+}
+
+.thin-text {
+	font-style: italic;
+}
 
 @media screen and (max-width: 576px) {
 	.abcd {
