@@ -30,8 +30,8 @@ $(".dropdown-toggle").dropdown();
 //End of form JS -----
 
 //order JS
-$(document).on("click", "summfrary > p", () => {
-  $("summfrary ul").slideToggle();
+$(document).on("click", "summary > p", () => {
+  $("summary ul").slideToggle();
 
-  $("summfrary > p > span").toggle();
+  $("summary > p > span").toggle();
 });
