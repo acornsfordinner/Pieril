@@ -775,6 +775,10 @@ h3 {
   font-size: 5vw;
 }
 
+.disclaimer h3 {
+  font-size: 240% !important;
+}
+
 @media all and (min-width: 600px) {
   .banner h1 {
     font-size: 4vw;
@@ -847,29 +851,27 @@ h3 {
 
 /*Slutet av css till startsida*/
 
-
 /*Början av css till career.html*/
 article h3 {
   font-family: "Shadows Into Light", cursive;
 }
 /*Slutet av css till career.html*/
 
-
 /*ORDER*/
-summary{    
-    max-width:100vw;
-    padding:  15px 20vw;
-    justify-content: center;
+summary {
+  max-width: 100vw;
+  padding: 15px 20vw;
+  justify-content: center;
 }
-summary > ul{
-    margin:0;
-    padding-left:0;
+summary > ul {
+  margin: 0;
+  padding-left: 0;
 }
-summary > p{
-    white-space: nowrap;
-    user-select:none;
+summary > p {
+  white-space: nowrap;
+  user-select: none;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 /**/
