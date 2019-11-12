@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Order</title>
-    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=League+Script%7CSigmar+One%7CUbuntu%7CShadows+Into+Light&display=swap" rel="stylesheet"/>
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=League+Script%7CSigmar+One%7CUbuntu%7CShadows+Into+Light&display=swap"
+        rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="Shorcut Icon" href="images/favicon.ico" />
     <script src="https://kit.fontawesome.com/238ea6e7ae.js" crossorigin="anonymous"></script>
@@ -20,101 +29,85 @@
 
 <body>
 
-        <!-------NAVBAR SKA GÖMMAS MEDAN EN GÖR VAL-->
-		<header class="container-fluid">
-                <nav class="navbar navbar-light light-blue lighten-4">
-                    <section class="col-3">
-                        <a class="navbar-brand" href="index.html"
-                           ><img class="d-block d-sm-none" src="images/logo.png"
-                                 /></a>
-                    </section>
-                    <section class="col-6 justify-content-center d-none d-sm-block">
-                        <ul class="justify-content-center nav nav-pills">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Start</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="order.html">Order</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                   class="nav-link dropdown-toggle"
-                                   data-toggle="dropdown"
-                                   href="about.html"
-                                   role="button"
-                                   aria-haspopup="true"
-                                   aria-expanded="false"
-                                   >About Us</a
-                                    >
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="about.html">About Us</a>
-                                    <a class="dropdown-item" href="career.html">Work With Us</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="col-3 text-right hamburger">
-                        <ul class="nav nav-pills d-block d-sm-none">
-                            <li class="nav-item dropdown">
-                                <a
-                                   class="nav-link dropdown-toggle"
-                                   data-toggle="dropdown"
-                                   href="#"
-                                   role="button"
-                                   aria-haspopup="true"
-                                   aria-expanded="false"
-                                   ><i class="fas fa-bars fa-1x"></i
-                                    ></a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="index.html">Start</a>
-                                    <a class="dropdown-item" href="order.html">Order</a>
-                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
-                                    <a class="dropdown-item" href="about.html">About Us</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="career.html">Work With Us</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-                </nav>
-            </header>
+    <!-------NAVBAR SKA GÖMMAS MEDAN EN GÖR VAL-->
+    <header class="container-fluid">
+        <nav class="navbar navbar-light light-blue lighten-4">
+            <section class="col-3">
+                <a class="navbar-brand" href="index.html"><img class="d-block d-sm-none" src="images/logo.png" /></a>
+            </section>
+            <section class="col-6 justify-content-center d-none d-sm-block">
+                <ul class="justify-content-center nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="about.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="about.html">About Us</a>
+                            <a class="dropdown-item" href="career.html">Work With Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-3 text-right hamburger">
+                <ul class="nav nav-pills d-block d-sm-none">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars fa-1x"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="index.html">Start</a>
+                            <a class="dropdown-item" href="order.html">Order</a>
+                            <a class="dropdown-item" href="gallery.html">Gallery</a>
+                            <a class="dropdown-item" href="about.html">About Us</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="career.html">Work With Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </header>
 
 
-    
-
-    
-    
-<div class="preorderpage">
-
-<section class="textsection">
-    <img width="17%;" src="file:///Users/lukashammarstrom/Desktop/gitKraken%20Pietime/Pieril/images/logo.png" alt="">
-<h2 id="preorderpage-header">Hi and Welcome to Pieril's order system </h2>
-
-<p id="preorderpage-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque et fugiat illo porro molestiae minus, eum voluptatibus officia recusandae. Accusamus vero mollitia, voluptatem nisi fugiat ipsum repellat molestias repellendus dolorem!
-
-    <br> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, atque!
-
-   
-</p>
-
-<img src="https://media1.giphy.com/media/ZciSgeJEQAEIFPUCGZ/giphy.gif" alt=""> 
 
 
-</section>
-
-<section class="textsection">
 
 
-<button>Ready to order</button>
+    <div class="preorderpage">
 
-</section>
-</div>
+        <section class="textsection">
+            <img width="17%;" src="file:///Users/lukashammarstrom/Desktop/gitKraken%20Pietime/Pieril/images/logo.png"
+                alt="">
+            <h2 id="preorderpage-header">Ready to order </h2>
 
-    <div class="testing123">
+            <p id="preorderpage-para">With over 1 000 001 possible pie combinations, we at Pieril are proud to show great diversity even inside our pies! 
+                <br><br>
+                How do you order? Just click what you want! 
+              
+
+            </p>
+
+            <img src="https://media1.giphy.com/media/ZciSgeJEQAEIFPUCGZ/giphy.gif" alt="">
+
+
+        </section>
+
+        <section class="textsection">
+
+
+            <button>I'm ready!</button>
+
+        </section>
+    </div>
+
+    <div class="testing123 overflow-hidden">
 
 
         <div class="outeroutercontainer shapes">
@@ -234,25 +227,25 @@
 
                 <a href="/fndex4.html"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
 
-                <div class="box1-2" id="sweet">
+                <div class="box1-2" id="dessert">
 
                     <div class="box1sec1"></div>
                     <div class="box1sec2">
                         <img class="circleicon" src="icons/Dessert/piedessert.jpg" alt="" width="50%;">
                     </div>
                     <div class="box1sec3">
-                        <p class="undertext-2">Sweet Pie</p>
+                        <p class="undertext-2">Dessert Pie</p>
                     </div>
 
                 </div>
-                <div class="box2-2" id="Savoury">
+                <div class="box2-2" id="Food">
 
                     <div class="box2sec1"></div>
                     <div class="box2sec2">
                         <img class="hearticon" src="icons/Main/main.png" alt="" width="43%;">
                     </div>
                     <div class="box2sec3">
-                        <p class="undertext-2"> Savoury Pie</p>
+                        <p class="undertext-2"> Food Pie</p>
                     </div>
 
 
@@ -260,7 +253,7 @@
             </div>
         </div>
 
-        <div class="outeroutercontainer sweet1">
+        <div class="outeroutercontainer dessert1">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
@@ -324,7 +317,7 @@
 
 
 
-        <div class="outeroutercontainer sweet2">
+        <div class="outeroutercontainer dessert2">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
@@ -391,7 +384,7 @@
 
 
 
-        <div class="outeroutercontainer sweet3">
+        <div class="outeroutercontainer dessert3">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
@@ -451,7 +444,7 @@
             </div>
         </div>
 
-        <div class="outeroutercontainer savoury1">
+        <div class="outeroutercontainer food1">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
@@ -514,7 +507,7 @@
 
 
 
-        <div class="outeroutercontainer savoury2">
+        <div class="outeroutercontainer food2">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
@@ -574,7 +567,7 @@
             </div>
         </div>
 
-        <div class="outeroutercontainer savoury3">
+        <div class="outeroutercontainer food3">
             <div class="outercontainer">
 
                 <!-- absolute objects -->
@@ -651,7 +644,7 @@
         <form id="pie-customizer-main">
 
             <section id="pie-customizer-root">
-                <h3>Grain Type</h3>
+                <h3>Shape</h3>
                 <section class="pie-shapes">
 
                     <section>
@@ -720,7 +713,7 @@
 
                     <section>
                         <label for="pie-filler-chocolate">Chocolate</label>
-                        <input type="checkbox" class="pie-filler-desert" name="pie-filler-chocolate"
+                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-chocolate"
                             id="pie-filler-chocolate">
                     </section>
                 </section>
@@ -746,7 +739,7 @@
 
                     <section>
                         <label for="pie-filler-raspberry">Raspberry</label>
-                        <input type="checkbox" class="pie-filler-desert" name="pie-filler-raspberry"
+                        <input type="checkbox" class="pie-filler-dessert" name="pie-filler-raspberry"
                             id="pie-filler-raspberry">
                     </section>
                 </section>
@@ -826,14 +819,14 @@
                     </section>
 
                     <section>
-                        <label for="pie-filler-texmex">Texmex mince</label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-texmex" id="pie-filler-texmex">
+                        <label for="pie-filler-chily">Spicy Chilies/label>
+                        <input type="checkbox" class="pie-filler-food" name="pie-filler-chily" id="pie-filler-chily">
                     </section>
 
                     <section>
-                        <label for="pie-filler-vegomince">Soy meat, minced</label>
-                        <input type="checkbox" class="pie-filler-food" name="pie-filler-vegomince"
-                            id="pie-filler-vegomince">
+                        <label for="pie-filler-onion">Onion</label>
+                        <input type="checkbox" class="pie-filler-food" name="pie-filler-onion"
+                            id="pie-filler-onion">
                     </section>
                 </section>
 
@@ -877,6 +870,27 @@
                 <a class="btn button-success" href="payment.html">Buy your pie</a></button>
         </form>
     </div>
+
+
+    
+    
+		<footer class="container-fluid fixed-bottom" hidden>
+            <section class="row">
+                <section class="info col-7 col-sm-9 col-xl-10">
+                    <p>
+                        Address: Bergsgatan 12<br />
+                        Contact: 040-123456
+                    </p>
+                </section>
+
+                <section class="icons col-5 col-sm-3 col-xl-2">
+                    <a href="https://www.facebook.com" class="fab fa-facebook"></a>
+                    <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+                    <a href="https://www.gmail.com" class="fas fa-envelope-square"></a>
+                </section>
+            </section>
+        </footer>
+
 
 
 </body>
