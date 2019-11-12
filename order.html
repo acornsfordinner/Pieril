@@ -1,548 +1,573 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Order</title>
-		<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=League+Script%7CSigmar+One%7CUbuntu%7CShadows+Into+Light&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-		<link rel="Shorcut Icon" href="images/favicon.ico">
-		<script defer src="https://kit.fontawesome.com/238ea6e7ae.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="orderstyle.css">
-		<link rel="stylesheet" href="style.css">
-		<script defer src="main.js"></script>
-		<script defer src="selectscript.js"></script>
-	</head>
 
-	<body>
-		<header class="container-fluid">
-			<nav class="navbar navbar-light light-blue lighten-4">
-				<a class="navbar-brand" href="index.html"><img class="d-block d-sm-none" src="images/logo.png" /></a>
-				</section>
-			<section class="col-6 col-sm-10 justify-content-center d-none d-sm-block">
-				<ul class="justify-content-center nav nav-pills">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Start</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="order.html">Order</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="gallery.html">Gallery</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="about.html" role="button"
-						   aria-haspopup="true" aria-expanded="false">About Us</a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="about.html">About Us</a>
-							<a class="dropdown-item" href="career.html">Work With Us</a>
-						</div>
-					</li>
-				</ul>
-			</section>
-			<section class="col-3 col-sm-1 text-right hamburger">
-				<ul class="nav nav-pills d-block d-sm-none">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-						   aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars fa-1x"></i></a>
-						<div class="dropdown-menu dropdown-menu-right">
-							<a class="dropdown-item" href="index.html">Start</a>
-							<a class="dropdown-item" href="order.html">Order</a>
-							<a class="dropdown-item" href="gallery.html">Gallery</a>
-							<a class="dropdown-item" href="about.html">About Us</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="career.html">Work With Us</a>
-						</div>
-					</li>
-				</ul>
-			</section>
-			</nav>
-		</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order</title>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=League+Script%7CSigmar+One%7CUbuntu%7CShadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="Shorcut Icon" href="images/favicon.ico">
+    <script defer src="https://kit.fontawesome.com/238ea6e7ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="orderstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script defer src="selectscript.js"></script>
+</head>
 
-
-	<div class="preorderpage">
-		<section class="textsection">
-			<h2 id="preorderpage-header">Ready to order </h2>
-			<p id="preorderpage-para">  With <i> thousands </i> of pie combinations possible, we at Pieril are proud to show great diversity inside our pies!
-				<br><br>
-				How do you order? Just click what you want and click next!
-			</p>
-			<img src="project-gifs/piegif1.gif" width="300px;" alt="">
-		</section>
-		<section class="textsection">
-			<button>I'm ready!</button>
-		</section>
-	</div>
-	<div class="testing123 overflow-hidden">
-		<div class="outeroutercontainer shapes">
-			<div class="outercontainer">
-				<h2 class="headertext"> Pick a shape! </h2>
-				<a href="#" type="0"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a> 
-				<a href="#" value="shape"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
-				<div class="box box1" id="circle">
-					<div class="box1sec1"></div>
-					<div class="box1sec2">
-						<img class="circleicon" src="icons/Shapes/Circle1.png" alt="" width="50%;">
-					</div>
-					<div class="box1sec3">
-						<p class="undertext">Circle-shaped pie</p>
-					</div>
-				</div>
-				<div class="box box2" id="heart">
-					<div class="box2sec1"></div>
-					<div class="box2sec2">
-						<img class="hearticon" src="icons/Shapes/heart.png" alt="" width="55%;">
-					</div>
-					<div class="box2sec3">
-						<p class="undertext">Heart-shaped pie</p>
-					</div>
-				</div>
-				<div class="box box3" id="star">
-					<div class="box3sec1"></div>
-					<div class="box3sec2">
-						<img class="staricon" src="icons/Shapes/star.png" width="58%;" alt="">
-					</div>
-					<div class="box3sec3">
-						<p class="undertext">Star-shaped pie</p>
-					</div>
-				</div>
-				<div class="box box4" id="square">
-					<div class="box4sec1"></div>
-					<div class="box4sec2">
-						<img class="squareicon" src="icons/Shapes/check-box-empty.png" width="49%;" alt="">
-					</div>
-					<div class="box4sec3">
-						<p class="undertext">Square-shaped pie</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="outeroutercontainer wheat">
-			<div class="outercontainer-2">
-				<h2 class="headertext"> Select wheat of choice</h2>
-				<a type ="1" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""> </a>
-				<a href="#" value="wheat"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
-				<div class="box box1-2" id="wholeGrain">
-					<div class="box1sec1"></div>
-					<div class="box1sec2">
-						<img class="circleicon" src="icons/wheat type/wheat.png" alt="" width="50%;">
-					</div>
-					<div class="box1sec3">
-						<p class="undertext-2">Whole grain</p>
-					</div>
-				</div>
-				<div class="box box2-2" id="fineGrain">
-					<div class="box2sec1"></div>
-					<div class="box2sec2">
-						<img class="hearticon" src="icons/wheat type/wheatbag.png" alt="" width="55%;">
-					</div>
-					<div class="box2sec3">
-						<p class="undertext-2"> Wheat</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="outeroutercontainer pieType">
-			<div class="outercontainer-2">
-				<h2 class="headertext"> Type of pie</h2>
-				<a type ="2" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""> </a>
-				<a href="#" value="pieType"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
-				<div class="box box1-2" id="dessert" type="sweet">
-					<div class="box1sec1"></div>
-					<div class="box1sec2">
-						<img class="circleicon" src="icons/Dessert/piedessert.jpg" alt="" width="50%;">
-					</div>
-					<div class="box1sec3">
-						<p class="undertext-2">Dessert Pie</p>
-					</div>
-				</div>
-				<div class="box box2-2" id="Food" type="savoury">
-					<div class="box2sec1"></div>
-					<div class="box2sec2">
-						<img class="hearticon" src="icons/Main/main.png" alt="" width="43%;">
-					</div>
-					<div class="box2sec3">
-						<p class="undertext-2"> Food Pie</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="outeroutercontainer dessert1 sweet1">
-			<div class="outercontainer">
-				<h2 class="headertext"> Select your pie fillings </h2>
-				<a type="3" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
-				<a value="filling1" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
-				<div class="box box1" id="apple">
-					<div class="box1sec1"></div>
-					<div class="box1sec2">
-						<img class="circleicon" src="icons/Dessert/Fyllning dessert 1/apple.png" alt="" width="50%;">
-					</div>
-					<div class="box1sec3">
-						<p class="undertext">Apple</p>
-					</div>
-				</div>
-				<div class="box box2" id="cherry">
-					<div class="box2sec1"></div>
-					<div class="box2sec2">
-						<img class="hearticon" src="icons/Dessert/Fyllning dessert 1/cherry.png" alt="" width="55%;">
-					</div>
-					<div class="box2sec3">
-						<p class="undertext">Cherry</p>
-					</div>
-				</div>
-				<div class="box box3" id="chocolate">
-					<div class="box3sec1"></div>
-					<div class="box3sec2">
-						<img class="staricon" src="icons/Dessert/Fyllning dessert 1/chocolate.png" width="58%;" alt="">
-					</div>
-					<div class="box3sec3">
-						<p class="undertext">Chocolate</p>
-					</div>
-				</div>
-				<div class="box box4" id="peach">
-					<div class="box4sec1"></div>
-					<div class="box4sec2">
-						<img class="squareicon" src="icons/Dessert/Fyllning dessert 1/peach.png" width="49%;" alt="">
-					</div>
-					<div class="box4sec3">
-						<p class="undertext">Peach</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="outeroutercontainer dessert2 sweet2">
-			<div class="outercontainer">
-				<h2 class="headertext"> More pie fillings </h2>
-				<a type="4" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
-				<a value="filling2" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
-				<div class="box box1" id="blueberry">
-					<div class="box1sec1"></div>
-					<div class="box1sec2">
-						<img class="circleicon" src="icons/Dessert/Fyllning dessert 2/blueberry.png" alt=""
-							 width="50%;">
-					</div>
-					<div class="box1sec3">
-						<p class="undertext">Blueberry</p>
-					</div>
-				</div>
-				<div class="box box2" id="strawberry">
-					<div class="box2sec1"></div>
-					<div class="box2sec2">
-						<img class="hearticon" src="icons/Dessert/Fyllning dessert 2/strawberry.png" alt=""
-							 width="55%;">
-					</div>
-					<div class="box2sec3">
-						<p class="undertext">Strawberry</p>
-					</div>
-				</div>
-				<div class="box box3" id="pear">
-					<div class="box3sec1"></div>
-					<div class="box3sec2">
-						<img class="staricon" src="icons/Dessert/Fyllning dessert 2/pear.png" width="58%;" alt="">
-					</div>
-					<div class="box3sec3">
-						<p class="undertext">Pear</p>
-					</div>
-				</div>
-				<div class=" box box4" id="raspberry">
-					<div class="box4sec1"></div>
-					<div class="box4sec2">
-						<img class="squareicon" src="icons/Dessert/Fyllning dessert 2/raspberry.png" width="49%;">
-					</div>
-					<div class="box4sec3">
-						<p class="undertext">Raspberry</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="outeroutercontainer dessert3 sweet3">
-			<div class="outercontainer">
-				<h2 class="headertext"> Finally, select desired topping </h2>
-				<a type="5" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
-				<a value="filling3" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
-				<div class="box box1" id="cream">
-					<div class="box1sec1"></div>
-					<div class="box1sec2">
-						<img class="circleicon" src="icons/Dessert/Topping/whipped-cream.png" alt="" width="50%;">
-					</div>
-					<div class="box1sec3">
-						<p class="undertext">Whipped-cream</p>
-					</div>
-				</div>
-				<div class="box box2" id="sprinkles">
-					<div class="box2sec1"></div>
-					<div class="box2sec2">
-						<img class="hearticon" src="icons/Dessert/Topping/sprinkle-stars.png" alt="" width="55%;">
-					</div>
-					<div class="box2sec3">
-						<p class="undertext">Sprinkles</p>
-					</div>
-				</div>
-				<div class="box box3" id="chocolateTopping">
-					<div class="box3sec1"></div>
-					<div class="box3sec2">
-						<img class="staricon" src="icons/Dessert/Topping/brownie.png" width="58%;" alt="">
-					</div>
-					<div class="box3sec3">
-						<p class="undertext">Melted white chocolate</p>
-					</div>
-				</div>
-				<div class="box box4" id="blueberry">
-					<div class="box4sec1"></div>
-					<div class="box4sec2">
-						<img class="squareicon" src="icons/Dessert/Topping/blueberry.png" width="49%;" alt="">
-					</div>
-					<div class="box4sec3">
-						<p class="undertext">Blueberry</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="outeroutercontainer food1 savoury1">
-			<div class="outercontainer">
-				<h2 class="headertext"> Select filling </h2>
-				<a type="6" href="#"> <img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
-				<a value="savoury1" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
-				<div class="box box1" id="broccoli">
-					<div class="box1sec1"></div>
-					<div class="box1sec2">
-						<img class="circleicon" src="icons/Main/Fyllning main 1/broccoli.png" alt="" width="50%;">
-					</div>
-					<div class="box1sec3">
-						<p class="undertext">Broccoli</p>
-					</div>
-				</div>
-				<div class="box box2" id="chicken">
-					<div class="box2sec1"></div>
-					<div class="box2sec2">
-						<img class="hearticon" src="icons/Main/Fyllning main 1/chicken-hand-drawn-outline.png" alt=""
-							 width="55%;">
-					</div>
-					<div class="box2sec3">
-						<p class="undertext">Chicken</p>
-					</div>
-				</div>
-				<div class="box box3" id="shrooms">
-					<div class="box3sec1"></div>
-					<div class="box3sec2">
-						<img class="staricon" src="icons/Main/Fyllning main 1/mushrooms.png" width="58%;" alt="">
-					</div>
-					<div class="box3sec3">
-						<p class="undertext">Shrooms</p>
-					</div>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-light light-blue lighten-4">
+            <section class="col-3 col-sm-1">
+            <a class="navbar-brand" href="index.html"><img class="d-block d-sm-none" src="images/logo.png" /></a>
+            </section>
+            <section class="col-6 col-sm-10 justify-content-center d-none d-sm-block">
+                <ul class="justify-content-center nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="about.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">About Us</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="about.html">About Us</a>
+                            <a class="dropdown-item" href="career.html">Work With Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-3 col-sm-1 text-right hamburger">
+                <ul class="nav nav-pills d-block d-sm-none">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars fa-1x"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="index.html">Start</a>
+                            <a class="dropdown-item" href="order.html">Order</a>
+                            <a class="dropdown-item" href="gallery.html">Gallery</a>
+                            <a class="dropdown-item" href="about.html">About Us</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="career.html">Work With Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </header>
 
 
-				</div>
-				<div class="box box4" id="spinach">
+    <div class="preorderpage">
+        <section class="textsection">
+            <h2 id="preorderpage-header">Ready to order </h2>
+            <p id="preorderpage-para"> With <i> thousands </i> of pie combinations possible, we at Pieril are proud to
+                show great diversity inside our pies!
+                <br><br>
+                How do you order? Just click what you want and click next!
+            </p>
+            <img src="project-gifs/piegif1.gif" width="300px;" alt="">
+        </section>
+        <section class="textsection">
+            <button>I'm ready!</button>
+        </section>
+    </div>
+    <div class="testing123 overflow-hidden">
+        <div class="outeroutercontainer shapes">
+            <div class="outercontainer">
+                <h2 class="headertext"> Pick a shape! </h2>
+                <a href="#" type="0"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a href="#" value="shape"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <div class="box box1" id="circle">
+                    <div class="box1sec1"></div>
+                    <div class="box1sec2">
+                        <img class="circleicon" src="icons/Shapes/Circle1.png" alt="" width="50%;">
+                    </div>
+                    <div class="box1sec3">
+                        <p class="undertext">Circle-shaped pie</p>
+                    </div>
+                </div>
+                <div class="box box2" id="heart">
+                    <div class="box2sec1"></div>
+                    <div class="box2sec2">
+                        <img class="hearticon" src="icons/Shapes/heart.png" alt="" width="55%;">
+                    </div>
+                    <div class="box2sec3">
+                        <p class="undertext">Heart-shaped pie</p>
+                    </div>
+                </div>
+                <div class="box box3" id="star">
+                    <div class="box3sec1"></div>
+                    <div class="box3sec2">
+                        <img class="staricon" src="icons/Shapes/star.png" width="58%;" alt="">
+                    </div>
+                    <div class="box3sec3">
+                        <p class="undertext">Star-shaped pie</p>
+                    </div>
+                </div>
+                <div class="box box4" id="square">
+                    <div class="box4sec1"></div>
+                    <div class="box4sec2">
+                        <img class="squareicon" src="icons/Shapes/check-box-empty.png" width="49%;" alt="">
+                    </div>
+                    <div class="box4sec3">
+                        <p class="undertext">Square-shaped pie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outeroutercontainer wheat">
+            <div class="outercontainer-2">
+                <h2 class="headertext"> Select wheat of choice</h2>
+                <a type="1" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""> </a>
+                <a href="#" value="wheat"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <div class="box box1-2" id="wholeGrain">
+                    <div class="box1sec1"></div>
+                    <div class="box1sec2">
+                        <img class="circleicon" src="icons/wheat type/wheat.png" alt="" width="50%;">
+                    </div>
+                    <div class="box1sec3">
+                        <p class="undertext-2">Whole grain</p>
+                    </div>
+                </div>
+                <div class="box box2-2" id="fineGrain">
+                    <div class="box2sec1"></div>
+                    <div class="box2sec2">
+                        <img class="hearticon" src="icons/wheat type/wheatbag.png" alt="" width="55%;">
+                    </div>
+                    <div class="box2sec3">
+                        <p class="undertext-2"> Wheat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outeroutercontainer pieType">
+            <div class="outercontainer-2">
+                <h2 class="headertext"> Type of pie</h2>
+                <a type="2" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""> </a>
+                <a href="#" value="pieType"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <div class="box box1-2" id="dessert" type="sweet">
+                    <div class="box1sec1"></div>
+                    <div class="box1sec2">
+                        <img class="circleicon" src="icons/Dessert/piedessert.jpg" alt="" width="50%;">
+                    </div>
+                    <div class="box1sec3">
+                        <p class="undertext-2">Dessert Pie</p>
+                    </div>
+                </div>
+                <div class="box box2-2" id="Food" type="savoury">
+                    <div class="box2sec1"></div>
+                    <div class="box2sec2">
+                        <img class="hearticon" src="icons/Main/main.png" alt="" width="43%;">
+                    </div>
+                    <div class="box2sec3">
+                        <p class="undertext-2"> Food Pie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outeroutercontainer dessert1 sweet1">
+            <div class="outercontainer">
+                <h2 class="headertext"> Select your pie fillings </h2>
+                <a type="3" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a value="filling1" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <div class="box box1" id="apple">
+                    <div class="box1sec1"></div>
+                    <div class="box1sec2">
+                        <img class="circleicon" src="icons/Dessert/Fyllning dessert 1/apple.png" alt="" width="50%;">
+                    </div>
+                    <div class="box1sec3">
+                        <p class="undertext">Apple</p>
+                    </div>
+                </div>
+                <div class="box box2" id="cherry">
+                    <div class="box2sec1"></div>
+                    <div class="box2sec2">
+                        <img class="hearticon" src="icons/Dessert/Fyllning dessert 1/cherry.png" alt="" width="55%;">
+                    </div>
+                    <div class="box2sec3">
+                        <p class="undertext">Cherry</p>
+                    </div>
+                </div>
+                <div class="box box3" id="chocolate">
+                    <div class="box3sec1"></div>
+                    <div class="box3sec2">
+                        <img class="staricon" src="icons/Dessert/Fyllning dessert 1/chocolate.png" width="58%;" alt="">
+                    </div>
+                    <div class="box3sec3">
+                        <p class="undertext">Chocolate</p>
+                    </div>
+                </div>
+                <div class="box box4" id="peach">
+                    <div class="box4sec1"></div>
+                    <div class="box4sec2">
+                        <img class="squareicon" src="icons/Dessert/Fyllning dessert 1/peach.png" width="49%;" alt="">
+                    </div>
+                    <div class="box4sec3">
+                        <p class="undertext">Peach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-					<div class="box4sec1"></div>
-					<div class="box4sec2">
-						<img class="squareicon" src="icons/Main/Fyllning main 1/spinach.png" width="49%;" alt="">
-					</div>
-					<div class="box4sec3">
-						<p class="undertext">Spinach</p>
-					</div>
+        <div class="outeroutercontainer dessert2 sweet2">
+            <div class="outercontainer">
+                <h2 class="headertext"> More pie fillings </h2>
+                <a type="4" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a value="filling2" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <div class="box box1" id="blueberry">
+                    <div class="box1sec1"></div>
+                    <div class="box1sec2">
+                        <img class="circleicon" src="icons/Dessert/Fyllning dessert 2/blueberry.png" alt=""
+                            width="50%;">
+                    </div>
+                    <div class="box1sec3">
+                        <p class="undertext">Blueberry</p>
+                    </div>
+                </div>
+                <div class="box box2" id="strawberry">
+                    <div class="box2sec1"></div>
+                    <div class="box2sec2">
+                        <img class="hearticon" src="icons/Dessert/Fyllning dessert 2/strawberry.png" alt=""
+                            width="55%;">
+                    </div>
+                    <div class="box2sec3">
+                        <p class="undertext">Strawberry</p>
+                    </div>
+                </div>
+                <div class="box box3" id="pear">
+                    <div class="box3sec1"></div>
+                    <div class="box3sec2">
+                        <img class="staricon" src="icons/Dessert/Fyllning dessert 2/pear.png" width="58%;" alt="">
+                    </div>
+                    <div class="box3sec3">
+                        <p class="undertext">Pear</p>
+                    </div>
+                </div>
+                <div class=" box box4" id="raspberry">
+                    <div class="box4sec1"></div>
+                    <div class="box4sec2">
+                        <img class="squareicon" src="icons/Dessert/Fyllning dessert 2/raspberry.png" width="49%;">
+                    </div>
+                    <div class="box4sec3">
+                        <p class="undertext">Raspberry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outeroutercontainer dessert3 sweet3">
+            <div class="outercontainer">
+                <h2 class="headertext"> Finally, select desired topping </h2>
+                <a type="5" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a value="filling3" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <div class="box box1" id="cream">
+                    <div class="box1sec1"></div>
+                    <div class="box1sec2">
+                        <img class="circleicon" src="icons/Dessert/Topping/whipped-cream.png" alt="" width="50%;">
+                    </div>
+                    <div class="box1sec3">
+                        <p class="undertext">Whipped-cream</p>
+                    </div>
+                </div>
+                <div class="box box2" id="sprinkles">
+                    <div class="box2sec1"></div>
+                    <div class="box2sec2">
+                        <img class="hearticon" src="icons/Dessert/Topping/sprinkle-stars.png" alt="" width="55%;">
+                    </div>
+                    <div class="box2sec3">
+                        <p class="undertext">Sprinkles</p>
+                    </div>
+                </div>
+                <div class="box box3" id="chocolateTopping">
+                    <div class="box3sec1"></div>
+                    <div class="box3sec2">
+                        <img class="staricon" src="icons/Dessert/Topping/brownie.png" width="58%;" alt="">
+                    </div>
+                    <div class="box3sec3">
+                        <p class="undertext">Melted white chocolate</p>
+                    </div>
+                </div>
+                <div class="box box4" id="blueberry">
+                    <div class="box4sec1"></div>
+                    <div class="box4sec2">
+                        <img class="squareicon" src="icons/Dessert/Topping/blueberry.png" width="49%;" alt="">
+                    </div>
+                    <div class="box4sec3">
+                        <p class="undertext">Blueberry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outeroutercontainer food1 savoury1">
+            <div class="outercontainer">
+                <h2 class="headertext"> Select filling </h2>
+                <a type="6" href="#"> <img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a value="savoury1" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <div class="box box1" id="broccoli">
+                    <div class="box1sec1"></div>
+                    <div class="box1sec2">
+                        <img class="circleicon" src="icons/Main/Fyllning main 1/broccoli.png" alt="" width="50%;">
+                    </div>
+                    <div class="box1sec3">
+                        <p class="undertext">Broccoli</p>
+                    </div>
+                </div>
+                <div class="box box2" id="chicken">
+                    <div class="box2sec1"></div>
+                    <div class="box2sec2">
+                        <img class="hearticon" src="icons/Main/Fyllning main 1/chicken-hand-drawn-outline.png" alt=""
+                            width="55%;">
+                    </div>
+                    <div class="box2sec3">
+                        <p class="undertext">Chicken</p>
+                    </div>
+                </div>
+                <div class="box box3" id="shrooms">
+                    <div class="box3sec1"></div>
+                    <div class="box3sec2">
+                        <img class="staricon" src="icons/Main/Fyllning main 1/mushrooms.png" width="58%;" alt="">
+                    </div>
+                    <div class="box3sec3">
+                        <p class="undertext">Shrooms</p>
+                    </div>
 
-				</div>
-			</div>
-		</div>
-		<div class="outeroutercontainer food2 savoury2">
-			<div class="outercontainer">
-				<h2 class="headertext"> Select more filling </h2>
-				<a type="7" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
-				<a value="savoury2" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
-				<div class="box box1" id="cheese">
-					<div class="box1sec1"></div>
-					<div class="box1sec2">
-						<img class="circleicon" src="icons/Main/Fyllning main 2/cheese.png" alt="" width="50%;">
-					</div>
-					<div class="box1sec3">
-						<p class="undertext">Cheese</p>
-					</div>
-				</div>
-				<div class="box box2" id="ham">
-					<div class="box2sec1"></div>
-					<div class="box2sec2">
-						<img class="hearticon" src="icons/Main/Fyllning main 2/ham.png" alt="" width="55%;">
-					</div>
-					<div class="box2sec3">
-						<p class="undertext">Ham</p>
-					</div>
-				</div>
-				<div class="box box3" id="chili">
 
-					<div class="box3sec1"></div>
-					<div class="box3sec2">
-						<img class="staricon" src="icons/Main/Fyllning main 2/chilli.png" width="58%;" alt="">
-					</div>
-					<div class="box3sec3">
-						<p class="undertext">Spicy chillies</p>
-					</div>
-				</div>
-				<div class="box box4" id="onion">
-					<div class="box4sec1"></div>
-					<div class="box4sec2">
-						<img class="squareicon" src="icons/Main/Fyllning main 2/onion.png" width="49%;" alt="">
-					</div>
-					<div class="box4sec3">
-						<p class="undertext">Onions</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="outeroutercontainer food3 savoury3">
-			<div class="outercontainer">
-				<h2 class="headertext"> Select your desired topping </h2>
-				<a type="8" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
-				<a value="savoury3" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
-				<div class="box box1" id="avocado">
-					<div class="box1sec1"></div>
-					<div class="box1sec2">
-						<img class="circleicon" src="icons/Main/Main topping/avocado.png" alt="" width="50%;">
-					</div>
-					<div class="box1sec3">
-						<p class="undertext">Avocado</p>
-					</div>
-				</div>
-				<div class="box box2" id="cheeseTopping">
-					<div class="box2sec1"></div>
-					<div class="box2sec2">
-						<img class="hearticon" src="icons/Main/Main topping/cheese.png" alt="" width="55%;">
-					</div>
-					<div class="box2sec3">
-						<p class="undertext">Cheese</p>
-					</div>
-				</div>
-				<div class="box box3" id="chanterelle">
+                </div>
+                <div class="box box4" id="spinach">
 
-					<div class="box3sec1"></div>
-					<div class="box3sec2">
-						<img class="staricon" src="icons/Main/Main topping/mushroom.png" width="58%;" alt="">
-					</div>
-					<div class="box3sec3">
-						<p class="undertext">Chanterelle</p>
-					</div>
-				</div>
-				<div class="box box4" id="mayo">
+                    <div class="box4sec1"></div>
+                    <div class="box4sec2">
+                        <img class="squareicon" src="icons/Main/Fyllning main 1/spinach.png" width="49%;" alt="">
+                    </div>
+                    <div class="box4sec3">
+                        <p class="undertext">Spinach</p>
+                    </div>
 
-					<div class="box4sec1"></div>
-					<div class="box4sec2">
-						<img class="squareicon" src="icons/Main/Main topping/mayonnaise.png" width="49%;" alt="">
-					</div>
-					<div class="box4sec3">
-						<p class="undertext">Mayonnaise</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!----------------------FOMULÄRET------------------------->
-	<summary class="formular text-center">
-		<h3 class="toptoptext">Your order is almost ready!<br><br></h3>
-		<div class="text-center">
-			<a class="btn btn-success" href="payment.html">Buy my pie</a>
-			<a class="btn btn-danger" href="order.html">Start over</a>
-		</div>
-		<p>Modify my pie
-			<span><i class="fas fa-chevron-down"></i></span>
-			<span class="hidden"><i class="fas fa-chevron-up"></i></span>
-		</p>
-		<ul class="hidden">
-			<section class="container">
-				<section class="row">
-					<section id="pie-customizer-root" class="col-12 col-md-6 col-lg-6">
-						<h3>Shape</h3>
-						<section class="pie-shapes">
-							<label><input type="radio" name="pie-shapes" id="checkbox-circle">Circle</label>
-							<label><input type="radio" name="pie-shapes" id="checkbox-square">Square</label>
-							<label><input type="radio" name="pie-shapes" id="checkbox-heart">Heart</label>
-							<label><input type="radio" name="pie-shapes" id="checkbox-star"> Star</label>
-						</section>
-						<h3>Grain Type</h3>
-						<section class="pie-grain-types">
-							<label><input type="radio" name="pie-grain-types" id="checkbox-wholeGrain">Whole Wheat</label>
-							<label><input type="radio" name="pie-grain-types" id="checkbox-fineGrain">Whole</label>
-						</section>
-						<!--beroende på valet pie-type-choices så ska antingen pie-customizer-food eller pie-customizer-dessert visas-->
-						<form class="pieTypes" id="pie-type-choices">
-							<h3>Food or Dessert</h3>
-							<label><input type="radio" name="pie-type-choices" id="checkbox-dessert">Dessert Pie</label>
-							<label><input type="radio" name="pie-type-choices" id="checkbox-Food">Food Pie</label>
-						</form>
-					</section>
-					<!--DESSERT-->
-					<section id="pie-customizer-dessert" class="col-12 col-md-6 col-lg-6 dessertPie">
-						<h3>Pie Fillers</h3>
-						<section class="pie-filler-dessert-1">
-							<label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-apple">Apple</label>
-							<label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-peach">Peach</label>
-							<label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-cherry">Cherry</label>
-							<label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-chocolate">Chocolate</label>
-						</section>
-						<section class="pie-filler-dessert-2">
-							<label><input type="checkbox" name="pie-filler-dessert-2" id="checkbox-blueberry">Blueberry</label>
-							<label><input type="checkbox" name="pie-filler-dessert-2" id="checkbox-strawberry">Strawberry</label>
-							<label><input type="checkbox" name="pie-filler-dessert-2" id="checkbox-pear">Pear</label>
-							<label><input type="checkbox" name="pie-filler-dessert-2" id="checkbox-raspberry">Raspberry</label>
-						</section>
-						<h3>Pie Toppings</h3>
-						<section class="pie-topping-dessert">
-							<label><input type="checkbox" name="pie-topping-dessert" id="checkbox-cream">Whipped-cream</label>
-							<label><input type="checkbox" name="pie-topping-dessert" id="checkbox-sprinkles">Sprinkles</label>
-							<label><input type="checkbox" name="pie-topping-dessert" id="checkbox-chocolateTopping">Melted white chocolate</label>
-							<label><input type="checkbox" name="pie-topping-dessert" id="checkbox-blueberry">Blueberry</label>
-						</section>
-					</section>
-					<!--Food-->
-					<section id="pie-customizer-food" class="col-12 col-md-6 col-lg-6 foodPie">
-						<h3>Pie Filler</h3>
-						<section class="pie-filler-food-1">
-							<label><input type="checkbox" name="pie-filler-food-1" id="checkbox-broccoli">Broccoli</label>
-							<label><input type="checkbox" name="pie-filler-food-1" id="checkbox-chicken">Chicken</label>
-							<label><input type="checkbox" name="pie-filler-food-1" id="checkbox-shrooms">Shrooms</label>
-							<label><input type="checkbox" name="pie-filler-food-1" id="checkbox-spinach">Spinach</label>
-						</section>
+                </div>
+            </div>
+        </div>
+        <div class="outeroutercontainer food2 savoury2">
+            <div class="outercontainer">
+                <h2 class="headertext"> Select more filling </h2>
+                <a type="7" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a value="savoury2" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <div class="box box1" id="cheese">
+                    <div class="box1sec1"></div>
+                    <div class="box1sec2">
+                        <img class="circleicon" src="icons/Main/Fyllning main 2/cheese.png" alt="" width="50%;">
+                    </div>
+                    <div class="box1sec3">
+                        <p class="undertext">Cheese</p>
+                    </div>
+                </div>
+                <div class="box box2" id="ham">
+                    <div class="box2sec1"></div>
+                    <div class="box2sec2">
+                        <img class="hearticon" src="icons/Main/Fyllning main 2/ham.png" alt="" width="55%;">
+                    </div>
+                    <div class="box2sec3">
+                        <p class="undertext">Ham</p>
+                    </div>
+                </div>
+                <div class="box box3" id="chili">
 
-						<section class="pie-filler-food-2">
-							<label><input type="checkbox" name="pie-filler-food-2" id="checkbox-cheese">Cheese</label>
-							<label><input type="checkbox" name="pie-filler-food-2" id="checkbox-ham">Ham</label>
-							<label><input type="checkbox" name="pie-filler-food-2" id="checkbox-chili">Spicy chillies</label>
-							<label><input type="checkbox" name="pie-filler-food-2" id="checkbox-onion">Onion</label>
-						</section>
+                    <div class="box3sec1"></div>
+                    <div class="box3sec2">
+                        <img class="staricon" src="icons/Main/Fyllning main 2/chilli.png" width="58%;" alt="">
+                    </div>
+                    <div class="box3sec3">
+                        <p class="undertext">Spicy chillies</p>
+                    </div>
+                </div>
+                <div class="box box4" id="onion">
+                    <div class="box4sec1"></div>
+                    <div class="box4sec2">
+                        <img class="squareicon" src="icons/Main/Fyllning main 2/onion.png" width="49%;" alt="">
+                    </div>
+                    <div class="box4sec3">
+                        <p class="undertext">Onions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outeroutercontainer food3 savoury3">
+            <div class="outercontainer">
+                <h2 class="headertext"> Select your desired topping </h2>
+                <a type="8" href="#"><img class="leftarrow" src="icons/left second arrow.png" alt=""></a>
+                <a value="savoury3" href="#"><img src="icons/right-arrow.png" alt="" class="rightarrow"></a>
+                <div class="box box1" id="avocado">
+                    <div class="box1sec1"></div>
+                    <div class="box1sec2">
+                        <img class="circleicon" src="icons/Main/Main topping/avocado.png" alt="" width="50%;">
+                    </div>
+                    <div class="box1sec3">
+                        <p class="undertext">Avocado</p>
+                    </div>
+                </div>
+                <div class="box box2" id="cheeseTopping">
+                    <div class="box2sec1"></div>
+                    <div class="box2sec2">
+                        <img class="hearticon" src="icons/Main/Main topping/cheese.png" alt="" width="55%;">
+                    </div>
+                    <div class="box2sec3">
+                        <p class="undertext">Cheese</p>
+                    </div>
+                </div>
+                <div class="box box3" id="chanterelle">
 
-						<h3>Pie Topping</h3>
-						<section class="pie-topping-food">
-							<label><input type="checkbox" name="pie-topping-food" id="checkbox-Avocado">Avocado</label>
-							<label><input type="checkbox" name="pie-topping-food" id="checkbox-cheeseTopping">Cheese</label>
-							<label><input type="checkbox" name="pie-topping-food" id="checkbox-chanterelle">Chanterelle</label>
-							<label><input type="checkbox" name="pie-topping-food" id="checkbox-mayo">Mayonnaise</label>
-						</section>
-					</section>
-					</ul>
-			</section>
-		</ul>
-	</summary>
+                    <div class="box3sec1"></div>
+                    <div class="box3sec2">
+                        <img class="staricon" src="icons/Main/Main topping/mushroom.png" width="58%;" alt="">
+                    </div>
+                    <div class="box3sec3">
+                        <p class="undertext">Chanterelle</p>
+                    </div>
+                </div>
+                <div class="box box4" id="mayo">
 
-	<footer class="container-fluid fixed-bottom" hidden>
-		<section class="row">
-			<section class="info col-7 col-sm-9 col-xl-10">
-				<p>
-					Address: Bergsgatan 12<br />
-					Contact: 040-123456
-				</p>
-			</section>
-			<section class="icons col-5 col-sm-3 col-xl-2">
-				<a href="https://www.facebook.com" class="fab fa-facebook"></a>
-				<a href="https://www.instagram.com" class="fab fa-instagram"></a>
-				<a href="https://www.gmail.com" class="fas fa-envelope-square"></a>
-			</section>
-		</section>
-	</footer>
-	</body>
+                    <div class="box4sec1"></div>
+                    <div class="box4sec2">
+                        <img class="squareicon" src="icons/Main/Main topping/mayonnaise.png" width="49%;" alt="">
+                    </div>
+                    <div class="box4sec3">
+                        <p class="undertext">Mayonnaise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------FOMULÄRET------------------------->
+    <summary class="formular text-center">
+        <h3 class="toptoptext">Your order is almost ready!<br><br></h3>
+        <div class="text-center">
+            <a class="btn btn-success" href="payment.html">Buy my pie</a>
+            <a class="btn btn-danger" href="order.html">Start over</a>
+        </div>
+        <p>Modify my pie
+            <span><i class="fas fa-chevron-down"></i></span>
+            <span class="hidden"><i class="fas fa-chevron-up"></i></span>
+        </p>
+        <ul class="hidden">
+            <section class="container">
+                <section class="row">
+                    <section id="pie-customizer-root" class="col-12 col-md-6 col-lg-6">
+                        <h3>Shape</h3>
+                        <section class="pie-shapes">
+                            <label><input type="radio" name="pie-shapes" id="checkbox-circle">Circle</label>
+                            <label><input type="radio" name="pie-shapes" id="checkbox-square">Square</label>
+                            <label><input type="radio" name="pie-shapes" id="checkbox-heart">Heart</label>
+                            <label><input type="radio" name="pie-shapes" id="checkbox-star"> Star</label>
+                        </section>
+                        <h3>Grain Type</h3>
+                        <section class="pie-grain-types">
+                            <label><input type="radio" name="pie-grain-types" id="checkbox-wholeGrain">Whole
+                                Wheat</label>
+                            <label><input type="radio" name="pie-grain-types" id="checkbox-fineGrain">Whole</label>
+                        </section>
+                        <!--beroende på valet pie-type-choices så ska antingen pie-customizer-food eller pie-customizer-dessert visas-->
+                        <form class="pieTypes" id="pie-type-choices">
+                            <h3>Food or Dessert</h3>
+                            <label><input type="radio" name="pie-type-choices" id="checkbox-dessert">Dessert Pie</label>
+                            <label><input type="radio" name="pie-type-choices" id="checkbox-Food">Food Pie</label>
+                        </form>
+                    </section>
+                    <!--DESSERT-->
+                    <section id="pie-customizer-dessert" class="col-12 col-md-6 col-lg-6 dessertPie">
+                        <h3>Pie Fillers</h3>
+                        <section class="pie-filler-dessert-1">
+                            <label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-apple">Apple</label>
+                            <label><input type="checkbox" name="pie-filler-dessert-1" id="checkbox-peach">Peach</label>
+                            <label><input type="checkbox" name="pie-filler-dessert-1"
+                                    id="checkbox-cherry">Cherry</label>
+                            <label><input type="checkbox" name="pie-filler-dessert-1"
+                                    id="checkbox-chocolate">Chocolate</label>
+                        </section>
+                        <section class="pie-filler-dessert-2">
+                            <label><input type="checkbox" name="pie-filler-dessert-2"
+                                    id="checkbox-blueberry">Blueberry</label>
+                            <label><input type="checkbox" name="pie-filler-dessert-2"
+                                    id="checkbox-strawberry">Strawberry</label>
+                            <label><input type="checkbox" name="pie-filler-dessert-2" id="checkbox-pear">Pear</label>
+                            <label><input type="checkbox" name="pie-filler-dessert-2"
+                                    id="checkbox-raspberry">Raspberry</label>
+                        </section>
+                        <h3>Pie Toppings</h3>
+                        <section class="pie-topping-dessert">
+                            <label><input type="checkbox" name="pie-topping-dessert"
+                                    id="checkbox-cream">Whipped-cream</label>
+                            <label><input type="checkbox" name="pie-topping-dessert"
+                                    id="checkbox-sprinkles">Sprinkles</label>
+                            <label><input type="checkbox" name="pie-topping-dessert"
+                                    id="checkbox-chocolateTopping">Melted white chocolate</label>
+                            <label><input type="checkbox" name="pie-topping-dessert"
+                                    id="checkbox-blueberry">Blueberry</label>
+                        </section>
+                    </section>
+                    <!--Food-->
+                    <section id="pie-customizer-food" class="col-12 col-md-6 col-lg-6 foodPie">
+                        <h3>Pie Filler</h3>
+                        <section class="pie-filler-food-1">
+                            <label><input type="checkbox" name="pie-filler-food-1"
+                                    id="checkbox-broccoli">Broccoli</label>
+                            <label><input type="checkbox" name="pie-filler-food-1" id="checkbox-chicken">Chicken</label>
+                            <label><input type="checkbox" name="pie-filler-food-1" id="checkbox-shrooms">Shrooms</label>
+                            <label><input type="checkbox" name="pie-filler-food-1" id="checkbox-spinach">Spinach</label>
+                        </section>
+
+                        <section class="pie-filler-food-2">
+                            <label><input type="checkbox" name="pie-filler-food-2" id="checkbox-cheese">Cheese</label>
+                            <label><input type="checkbox" name="pie-filler-food-2" id="checkbox-ham">Ham</label>
+                            <label><input type="checkbox" name="pie-filler-food-2" id="checkbox-chili">Spicy
+                                chillies</label>
+                            <label><input type="checkbox" name="pie-filler-food-2" id="checkbox-onion">Onion</label>
+                        </section>
+
+                        <h3>Pie Topping</h3>
+                        <section class="pie-topping-food">
+                            <label><input type="checkbox" name="pie-topping-food" id="checkbox-Avocado">Avocado</label>
+                            <label><input type="checkbox" name="pie-topping-food"
+                                    id="checkbox-cheeseTopping">Cheese</label>
+                            <label><input type="checkbox" name="pie-topping-food"
+                                    id="checkbox-chanterelle">Chanterelle</label>
+                            <label><input type="checkbox" name="pie-topping-food" id="checkbox-mayo">Mayonnaise</label>
+                        </section>
+                    </section>
+        </ul>
+        </section>
+        </ul>
+    </summary>
+
+    <footer class="container-fluid fixed-bottom" hidden>
+        <section class="row">
+            <section class="info col-7 col-sm-9 col-xl-10">
+                <p>
+                    Address: Bergsgatan 12<br />
+                    Contact: 040-123456
+                </p>
+            </section>
+            <section class="icons col-5 col-sm-3 col-xl-2">
+                <a href="https://www.facebook.com" class="fab fa-facebook"></a>
+                <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+                <a href="https://www.gmail.com" class="fas fa-envelope-square"></a>
+            </section>
+        </section>
+    </footer>
+</body>
+
 </html>
