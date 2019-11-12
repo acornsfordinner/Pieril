@@ -759,8 +759,8 @@ h3 {
 }
 
 .banner img {
-  width: 30vw;
-  height: 30vw;
+  width: 25vw;
+  height: 25vw;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -858,34 +858,33 @@ article h3 {
 /*Slutet av css till career.html*/
 
 /*ORDER*/
-summary{    
-	display:block;
-	text-align:center;
-    max-width:100vw;
-    padding:  30px 20vw;
-	justify-content: center;
-	height:100vh;
-
+summary {
+  display: block;
+  text-align: center;
+  max-width: 100vw;
+  padding: 30px 20vw;
+  justify-content: center;
+  height: 100vh;
 }
 summary > ul {
   margin: 0;
   padding-left: 0;
 }
-summary > p{
-	white-space: nowrap;
-	user-select:none;
+summary > p {
+  white-space: nowrap;
+  user-select: none;
 }
 summary > a {
-	margin:auto;
-	padding: 15px 20px;
+  margin: auto;
+  padding: 15px 20px;
 }
-summary .btn{
-	border-radius:15px;
+summary .btn {
+  border-radius: 15px;
 }
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 .btn-success {
-	margin-right:15px;
-	padding-bottom:3px;
+  margin-right: 15px;
+  padding-bottom: 3px;
 }
