@@ -847,12 +847,11 @@ h3 {
 
 /*Slutet av css till startsida*/
 
+
 /*Början av css till career.html*/
 article h3 {
   font-family: "Shadows Into Light", cursive;
 }
 /*Slutet av css till career.html*/
 
-main {
-  min-height: 100%;
-}
+
