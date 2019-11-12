@@ -30,24 +30,24 @@
 <body>
 
     <!-------NAVBAR SKA GÖMMAS MEDAN EN GÖR VAL-->
-    <header class="container-fluid navBar">
+    <header class="container-fluid">
         <nav class="navbar navbar-light light-blue lighten-4">
-            <section class="col-3">
+            <section class="col-3 col-sm-1">
                 <a class="navbar-brand" href="index.html"><img class="d-block d-sm-none" src="images/logo.png" /></a>
             </section>
-            <section class="col-6 justify-content-center d-none d-sm-block">
+            <section class="col-6 col-sm-10 justify-content-center d-none d-sm-block">
                 <ul class="justify-content-center nav nav-pills">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Start</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="order.html">Order</a>
+                        <a class="nav-link" href="order.html">Order</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="about.html" role="button"
+                        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="about.html" role="button"
                             aria-haspopup="true" aria-expanded="false">About Us</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="about.html">About Us</a>
@@ -56,7 +56,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="col-3 text-right hamburger">
+            <section class="col-3 col-sm-1 text-right hamburger">
                 <ul class="nav nav-pills d-block d-sm-none">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -637,11 +637,13 @@
 
     <!--FOMULÄRET!!!!-->
     
-    <summfrary class="formular">
+    <summfrary class="formular text-center">
             <h3>Your order is almost ready!<br><br></h3>
                 <!--KNAPPAR-->
+                <div class="text-center">
                     <a class="btn btn-success" href="payment.html">Buy my pie</a>
                     <a class="btn btn-danger" href="order.html">Start over</a>
+                </div>
 
         <p>Modify my pie
             <span><i class="fas fa-chevron-down"></i></span>
