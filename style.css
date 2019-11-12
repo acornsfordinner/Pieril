@@ -31,18 +31,18 @@ header.fa-1x {
 }
 
 .dropdown-menu {
-  background-color: #39375b;
-  border: 1px solid #39375b;
+	background-color: #39375b;
+	border: 1px solid #39375b;
 }
 
 .dropdown-item {
-  color: white;
-  background-color: #39375b;
+	color: white;
+	background-color: #39375b;
 }
 
 .dropdown-item:hover {
-  color: #39375b;
-  background-color: #745c97;
+	color: #39375b;
+	background-color: #745c97;
 }
 
 .dropdown-toggle::after {
@@ -283,7 +283,7 @@ figcaption:hover {
 	.piesonice {
 		font-size: 13vmin;
 	}
-	
+
 	.gallery-text p{
 		font-size: 74%;
 	}
@@ -718,6 +718,13 @@ h3{
 	font-family: "Shadows Into Light", cursive;
 	font-size: 230%!important;
 }
+.fat-text {
+	font-weight: 900;
+}
+
+.thin-text {
+	font-style: italic;
+}
 
 @media screen and (max-width: 576px) {
 	.abcd {
@@ -737,7 +744,7 @@ h3{
 
 /*Början av css till startsida*/
 .carousel-item .d-block{
-	max-height: 65vh;
+	height: 50vh;
 	margin: 50px 0;
 	object-fit: cover;
 	object-position: 50% 50%;
