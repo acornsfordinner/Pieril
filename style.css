@@ -867,7 +867,6 @@ summary > ul{
 }
 summary > p{
     white-space: nowrap;
-    
     user-select:none;
 }
 .hidden{

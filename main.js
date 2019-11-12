@@ -26,8 +26,8 @@ $(".dropdown-toggle").dropdown();
 
 //order JS
 $(document).on('click', 'summary > p', ()=> {
-    $('summary ul').slideToggle();
-    
-    $('summary > p > span').toggle()
+	$('summary ul').slideToggle();
+	
+	$('summary > p > span').toggle()
 
 })
