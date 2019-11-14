@@ -278,9 +278,9 @@ figcaption:hover {
 }
 
 @media all and (min-width: 576px) {
-	p{
-		font-size: 20px;
-	}
+  p {
+    font-size: 20px;
+  }
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -691,9 +691,9 @@ h3 {
   .potrait {
     height: 24vh;
   }
-	p{
-		font-size: 4vw;
-	}
+  p {
+    font-size: 4vw;
+  }
 }
 
 /*Början av css till startsida*/
@@ -861,4 +861,8 @@ summary .btn {
 }
 .was-validated .form-check-input:valid ~ .form-check-label {
   color: #9dfab2;
+}
+
+.cb-active {
+  background: #afa0c5;
 }

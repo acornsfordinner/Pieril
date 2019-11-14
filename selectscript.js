@@ -24,17 +24,30 @@ $("button").click(function() {
 
 //##### change background-color
 
-$(".box").click(function() {
+$(".r-box").click(function() {
   let selected = $(this).attr("id");
   let selectedId = $("#checkbox-" + selected);
   selectedId.prop("checked", true);
   pieType = $(this).attr("type");
   $(this)
     .parent()
-    .find(".box")
+    .find(".r-box")
     .css("background-color", "");
   $(this).css("background-color", "#afa0c5");
 });
+
+$(".box").click(function() {
+  if ($(this).hasClass("cb-active")) {
+    $(this).removeClass("cb-active");
+  } else {
+    let selected = $(this).attr("id");
+    let selectedId = $("#checkbox-" + selected);
+    selectedId.prop("checked", true);
+    pieType = $(this).attr("type");
+    $(this).addClass("cb-active");
+  }
+});
+
 //### Pie Type Chosen
 
 function hidePieType(type) {
