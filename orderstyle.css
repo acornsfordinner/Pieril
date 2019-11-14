@@ -311,15 +311,15 @@ body {
 
 .preorderpage {
     height: 100vh;
-    width: 100%;
-    
-   
+    width: 100%;  
 }
 
 .textsection {
     justify-content: center;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 15px;
+	padding-right: 50px;
+	padding-left: 30px;
     width: 60vh;
     margin: auto;
 }
