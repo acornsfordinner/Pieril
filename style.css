@@ -210,18 +210,6 @@ figcaption:hover {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@media all and (min-width: 350px) {
-  .gallery-text p {
-    font-size: 74%;
-  }
-}
-
-@media all and (min-width: 390px) {
-  .gallery-text p {
-    font-size: 84%;
-  }
-}
-
 @media all and (min-width: 460px) {
   .gallery-img-11 {
     grid-column-start: 1;
@@ -286,10 +274,6 @@ figcaption:hover {
 
   .piesonice {
     font-size: 13vmin;
-  }
-
-  .gallery-text p {
-    font-size: 74%;
   }
 }
 
