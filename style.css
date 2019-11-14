@@ -294,6 +294,9 @@ figcaption:hover {
 }
 
 @media all and (min-width: 576px) {
+	p{
+		font-size: 20px;
+	}
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -734,16 +737,15 @@ h3 {
   .abcd {
     font-size: 8vw;
   }
-  p {
-    font-size: 3vw;
-    margin-bottom: 10px;
-  }
   .container {
     margin-top: auto;
   }
   .potrait {
     height: 24vh;
   }
+	p{
+		font-size: 4vw;
+	}
 }
 
 /*Början av css till startsida*/
