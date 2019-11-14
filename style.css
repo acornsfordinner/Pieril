@@ -905,3 +905,6 @@ summary .btn {
 .was-validated .form-check-input:invalid ~ .form-check-label {
   color: rgb(250, 183, 183); ;
 }
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: #9dfab2;
+}
