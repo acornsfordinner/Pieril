@@ -76,7 +76,7 @@ header.fa-1x {
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(18, 30vw);
+  grid-template-rows: repeat(19, 30vw);
   grid-gap: 15px;
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -393,12 +393,6 @@ figcaption:hover {
   }
 }
 
-@media all and (min-width: 674px) {
-  .gallery-text p {
-    font-size: 88%;
-  }
-}
-
 @media all and (min-width: 768px) {
   .gallery {
     grid-template-columns: repeat(5, 1fr);
@@ -537,12 +531,6 @@ figcaption:hover {
   }
 }
 
-@media all and (min-width: 967px) {
-  .gallery-text p {
-    font-size: 96%;
-  }
-}
-
 @media all and (min-width: 992px) {
   .gallery {
     grid-template-columns: repeat(7, 1fr);
@@ -622,30 +610,6 @@ figcaption:hover {
 
   .gallery-text p {
     font-size: 64%;
-  }
-}
-
-@media all and (min-width: 1013px) {
-  .gallery-text p {
-    font-size: 67%;
-  }
-}
-
-@media all and (min-width: 1045px) {
-  .gallery-text p {
-    font-size: 72%;
-  }
-}
-
-@media all and (min-width: 1077px) {
-  .gallery-text p {
-    font-size: 74%;
-  }
-}
-
-@media all and (min-width: 1106px) {
-  .gallery-text p {
-    font-size: 77%;
   }
 }
 
