@@ -14,6 +14,7 @@ let pieType = 0;
 $("button").click(function() {
   $(".preorderpage").hide();
   $(".navBar").hide();
+  $(".foot").hide();
   $(".shapes").show();
 });
 //### select radio button
@@ -146,6 +147,8 @@ $("a").click(function() {
     case "savoury3":
       $(".savoury3").hide();
       $(".formular").show();
+      $(".navBar").show();
+      $(".foot").show();
       $(".dessertPie").hide();
       $(".pieTypes").hide();
 
