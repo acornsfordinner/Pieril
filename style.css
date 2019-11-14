@@ -6,6 +6,10 @@ header {
   background-color: #39375b;
 }
 
+.company {
+  font-family: "Shadows Into Light", cursive !important;
+}
+
 header a {
   color: white;
 }
@@ -892,18 +896,18 @@ summary .btn {
   padding-top: 20px;
 }
 
-.invalid-feedback{
-  color: rgb(250, 183, 183); 
+.invalid-feedback {
+  color: rgb(250, 183, 183);
 }
-.valid-feedback{
+.valid-feedback {
   color: #9dfab2;
 }
 
-.form-check-input:invalid  ~ .form-check-label{
-  color: white; 
+.form-check-input:invalid ~ .form-check-label {
+  color: white;
 }
 .was-validated .form-check-input:invalid ~ .form-check-label {
-  color: rgb(250, 183, 183); ;
+  color: rgb(250, 183, 183);
 }
 .was-validated .form-check-input:valid ~ .form-check-label {
   color: #9dfab2;
