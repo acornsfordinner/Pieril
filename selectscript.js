@@ -132,6 +132,8 @@ $("a").click(function() {
     case "filling3":
       $(".sweet3").hide();
       $(".formular").show();
+      $(".navBar").show();
+      $(".foot").show();
       $(".foodPie").hide();
       $(".pieTypes").hide();
       $(".navBar").show();

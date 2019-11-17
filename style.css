@@ -738,7 +738,7 @@ article h3 {
 /*ORDER*/
 summary {
   display: block;
-  text-align: center;
+  /*text-align: center;*/
   max-width: 100vw;
   padding: 30px 20vw;
   justify-content: center;
@@ -789,4 +789,13 @@ summary .btn {
 
 .cb-active {
   background: #afa0c5;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  padding-right: 3em;
 }
