@@ -790,12 +790,3 @@ summary .btn {
 .cb-active {
   background: #afa0c5;
 }
-
-table.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-td {
-  padding-right: 3em;
-}
