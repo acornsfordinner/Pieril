@@ -11,7 +11,7 @@ let pieType = 0;
 //#### selecter
 
 //#### go to first page
-$("button").click(function() {
+$("button").click(function () {
   $(".preorderpage").hide();
   $(".navBar").hide();
   $(".foot").hide();
@@ -25,7 +25,7 @@ $("button").click(function() {
 
 //##### change background-color
 
-$(".r-box").click(function() {
+$(".r-box").click(function () {
   let selected = $(this).attr("id");
   let selectedId = $("#checkbox-" + selected);
   selectedId.prop("checked", true);
@@ -37,7 +37,7 @@ $(".r-box").click(function() {
   $(this).css("background-color", "#afa0c5");
 });
 
-$(".box").click(function() {
+$(".box").click(function () {
   if ($(this).hasClass("cb-active")) {
     $(this).removeClass("cb-active");
   } else {
@@ -65,7 +65,7 @@ function hidePieType(type) {
 
 //###### show next step
 
-$("a").click(function() {
+$("a").click(function () {
   let input = $(this).attr("value");
   //backward
   currentPage = $(this).attr("type");
