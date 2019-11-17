@@ -742,7 +742,7 @@ summary {
   max-width: 100vw;
   padding: 30px 20vw;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 summary > ul {
   margin: 0;
