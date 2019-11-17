@@ -8,9 +8,9 @@ let currentPage;
 //### type of pie
 let pieType = 0;
 
-//#### selecterd
+//#### selecter
 
-//#### go to firs page
+//#### go to first page
 $("button").click(function() {
   $(".preorderpage").hide();
   $(".navBar").hide();
@@ -134,6 +134,8 @@ $("a").click(function() {
       $(".formular").show();
       $(".foodPie").hide();
       $(".pieTypes").hide();
+      $(".navBar").show();
+      $(".foot").show();
 
       break;
     case "savoury1":
